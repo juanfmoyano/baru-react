@@ -1,0 +1,20 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.SideMenuItem {
+  display: flex;
+  justify-content: center;
+  margin: $spacing-xs $spacing-l;
+  border-bottom: $white solid $spacing-xxs;
+
+  & a {
+    padding: $spacing-xs;
+    color: $white;
+    font-size: $font-size-m;
+    text-decoration: none;
+
+    @include smallDevices() {
+      font-size: $font-size-s;
+    }
+  }
+}

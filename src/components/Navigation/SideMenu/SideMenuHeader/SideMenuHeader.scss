@@ -1,0 +1,36 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.SideMenuHeader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: $spacing-m;
+
+  & .Title {
+    flex: 0 1 90%;
+    align-self: center;
+    margin: 0;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $font-size-m;
+    font-weight: bold;
+
+    @include smallDevices(){
+      font-size: $font-size-s;
+    }
+  }
+
+  & .CloseButton {
+    flex: 0 1 10%;
+    align-self: center;
+    color: $white;
+    text-align: center;
+    font-size: $font-size-xxl;
+
+    @include smallDevices{
+      font-size: $font-size-l;
+    }
+  }
+}

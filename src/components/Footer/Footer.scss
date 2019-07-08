@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: $header-height-m;
+  background-color: $main-blue;
+  color: $white;
+
+  & .Text {
+    flex: 0 1 33%;
+    text-align: center;
+  }
+
+  @include smallDevices(){
+    flex-direction: column;
+  }
+}

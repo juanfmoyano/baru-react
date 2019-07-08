@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.Logo{
+    width: 100%;
+    height: 100%;
+
+    &__Image{
+        padding: $spacing-xxs;
+        margin: $spacing-xxs $spacing-s;
+        border-radius: 50%;
+        background-color: $white;
+    }
+}
