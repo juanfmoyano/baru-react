@@ -1,0 +1,18 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.Navbar {
+  display: flex;
+  width: 100%;
+  margin: 0 $spacing-l;
+  background-color: $black;
+  color: $main-blue;
+
+  & .NavItem {
+    flex: 0 1 25%;
+  }
+
+  @include mediumDevices() {
+    display: none;
+  }
+}

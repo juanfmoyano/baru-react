@@ -1,0 +1,23 @@
+@import "../../../../styles/variables";
+@import "../../../../styles//mixins";
+
+.SideMenuToggle {
+  display: none;
+  @include mediumDevices() {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 $spacing-xl;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .ToggleElement {
+    width: $spacing-4xl;
+    height: $spacing-xxs;
+    margin: $spacing-xxs 0;
+    border-radius: $spacing-xxs;
+    background-color: $white;
+  }
+}

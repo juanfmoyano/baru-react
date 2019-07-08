@@ -1,0 +1,11 @@
+@mixin mediumDevices() {
+  @media only screen and (max-device-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin smallDevices() {
+  @media only screen and (max-device-width: 500px) {
+    @content;
+  }
+}

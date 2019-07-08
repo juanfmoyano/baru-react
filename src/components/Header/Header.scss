@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $main-blue;
+
+  &__Main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: $header-height-l;
+
+    & .Logo {
+      display: flex;
+      flex: 0 1 15%;
+      @include mediumDevices() {
+        flex: 0 1 10%;
+      }
+      @include smallDevices() {
+        display: none;
+      }
+    }
+
+    & .Info {
+      flex: 0 1 85%;
+      color: $white;
+      font-size: $font-size-m;
+      text-transform: uppercase;
+
+      @include smallDevices() {
+        flex: 0 1 95%;
+        text-align: center;
+      }
+    }
+
+    & .SideMenuToggle {
+      display: none;
+      @include mediumDevices() {
+        display: flex;
+        flex: 0 1 5%;
+      }
+    }
+  }
+}
