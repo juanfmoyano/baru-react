@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import SideMenuHeader from "./SideMenuHeader/SideMenuHeader";
 import SideMenuOptions from "./SideMenuOptions/SideMenuOptions";
 
-import { SIDEMENU_TITLE } from "utils/constants";
+import { SIDEMENU} from "utils/constants";
 import "./SideMenu.scss";
 
 class SideMenu extends Component {
@@ -12,7 +12,7 @@ class SideMenu extends Component {
     const className = this.props.open ? "SideMenu" : "SideMenu Inactive";
     return (
       <div className={className}>
-        <SideMenuHeader closeMenu={this.props.closeMenu} menuTitle={SIDEMENU_TITLE}/>
+        <SideMenuHeader closeMenu={this.props.closeMenu} menuTitle={SIDEMENU.title}/>
         <SideMenuOptions closeMenu={this.props.closeMenu} options={this.props.options} />
       </div>
     );

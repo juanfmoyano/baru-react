@@ -3,14 +3,16 @@
 
 .SideMenuToggle {
   display: none;
-  @include mediumDevices() {
+  @include largeDevices() {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
     margin: 0 $spacing-xl;
+    padding: $spacing-xss;
+    border-radius: $spacing-xss;
+    background-color: $white;
     box-sizing: border-box;
-    cursor: pointer;
   }
 
   .ToggleElement {
@@ -18,6 +20,6 @@
     height: $spacing-xxs;
     margin: $spacing-xxs 0;
     border-radius: $spacing-xxs;
-    background-color: $white;
+    background-color: $black;
   }
 }

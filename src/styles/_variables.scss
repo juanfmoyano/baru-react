@@ -1,7 +1,12 @@
 // Colors
 $white: #ffffff;
+$white-gradient: rgba(255, 255, 255, 0.5);
+$grey: #888888;
+$grey-gradient:  rgba(122, 122, 122, 0.6);
 $black: #000000;
+$black-gradient: rgba(0, 0, 0, 0.5);
 $main-blue: #206cbd;
+$main-blue-gradient: rgba(32, 108, 189, 0.5);
 
 // Spacings
 $spacing-xxs: 0.2rem;
@@ -27,6 +32,6 @@ $font-size-xxl: 2.1rem;
 $font-size-xxxl: 2.5rem;
 
 // Reusable sizes
-$header-height-s: 2rem;
-$header-height-m: 3rem;
-$header-height-l: 5rem;
+$header-height-s: 8vh;
+$header-height-m: 10vh;
+$header-height-l: 12vh;
