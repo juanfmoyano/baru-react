@@ -6,7 +6,9 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: $main-blue;
+  background-image: linear-gradient(to right, $black, $main-blue-gradient),
+    url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/popular-food-meal-website-header.jpg");
+  background-position: center;
 
   &__Main {
     display: flex;
@@ -18,7 +20,7 @@
     & .Logo {
       display: flex;
       flex: 0 1 15%;
-      @include mediumDevices() {
+      @include largeDevices() {
         flex: 0 1 10%;
       }
       @include smallDevices() {
@@ -29,8 +31,9 @@
     & .Info {
       flex: 0 1 85%;
       color: $white;
-      font-size: $font-size-m;
-      text-transform: uppercase;
+      font-size: $font-size-xl;
+      font-variant: small-caps;
+      font-family: Georgia, serif;
 
       @include smallDevices() {
         flex: 0 1 95%;
@@ -40,7 +43,7 @@
 
     & .SideMenuToggle {
       display: none;
-      @include mediumDevices() {
+      @include largeDevices() {
         display: flex;
         flex: 0 1 5%;
       }

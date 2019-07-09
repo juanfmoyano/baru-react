@@ -12,7 +12,7 @@
     flex: 0 1 25%;
   }
 
-  @include mediumDevices() {
+  @include largeDevices() {
     display: none;
   }
 }
