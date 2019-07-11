@@ -19,7 +19,7 @@
 }
 
 @mixin background-image() {
-  min-height: 100vh;
+  //min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,16 +41,24 @@
   }
 }
 
-@mixin content() {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 ($spacing-4xl * 2);
-}
-
 @mixin title-decoration() {
   padding: 0 $spacing-xl;
   border-width: $spacing-xxs;
   border-style: solid;
   border-image: linear-gradient(to bottom, $main-blue, $white) 1 100%;
+}
+
+@mixin secondary-title() {
+  font-family: Georgia, serif;
+  font-size: $font-size-xl;
+  text-align: center;
+  text-transform: uppercase;
+  @include title-decoration();
+}
+
+@mixin content() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 ($spacing-4xl * 2);
 }

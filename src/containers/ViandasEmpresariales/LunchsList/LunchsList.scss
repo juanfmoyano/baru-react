@@ -1,0 +1,8 @@
+.LunchsList {
+  display: flex;
+  width: 100%;
+
+  & .LunchItem {
+    flex: 0 1 25%;
+  }
+}

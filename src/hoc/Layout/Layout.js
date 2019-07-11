@@ -26,7 +26,7 @@ class Layout extends Component {
           options={routesInfo}
         />
         <Backdrop show={this.props.open} clicked={this.props.closeMenu} />
-        <main className="Content">{this.props.children}</main>
+        <main className="Main">{this.props.children}</main>
         <Footer />
       </Wrapper>
     );

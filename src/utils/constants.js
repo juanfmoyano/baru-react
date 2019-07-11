@@ -56,3 +56,25 @@ export const QUIENES_SOMOS = {
     }
   }
 };
+
+export const VIANDAS = {
+  title: "Nuestras viandas",
+  lunchTypes: {
+    transporte: {
+      title: "Para Transporte",
+      description: "Acá iría un texto descriptivo que haga referencia a las viandas para transporte"
+    },
+    empresas: {
+      title: "Para Empresas",
+      description: "Acá iría un texto descriptivo que haga referencia a las viandas para empresas"
+    },
+    particulares: {
+      title: "Particulares",
+      description: "Acá iría un texto descriptivo que haga referencia a las viandas particulares"
+    },
+    egresados: { 
+      title: "Egresados",
+      description: "Acá iría un texto descriptivo que haga referencia a las viandas para egresados"
+    }
+  }
+}
