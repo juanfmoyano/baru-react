@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import SideMenuHeader from "./SideMenuHeader/SideMenuHeader";
 import SideMenuOptions from "./SideMenuOptions/SideMenuOptions";
 
-import { SIDEMENU} from "utils/constants";
+import { SIDEMENU } from "utils/constants";
 import "./SideMenu.scss";
 
 class SideMenu extends Component {

@@ -1,0 +1,29 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.LunchItem {
+  display: flex;
+  flex-direction: column;
+  margin: $spacing-l;
+  border-radius: $spacing-l;
+  background-color: $white-gradient;
+  box-shadow: 5px 10px 8px 10px #888888;
+  color: $main-blue;
+  text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
+
+  &__Title {
+    text-align: center;
+  }
+
+  &__Separator {
+    align-self: center;
+    width: 80%;
+    height: 2px;
+    background-color: $main-blue;
+  }
+
+  &__Description {
+    padding: $spacing-s;
+    margin: 0;
+  }
+}

@@ -21,7 +21,12 @@ export const ROUTES_LABELS = {
 };
 
 export const SIDEMENU = {
-  title: "Barú gastronomía",
+  title: "Barú gastronomía"
+};
+
+export const ICONS_LABELS = {
+  next: "⤞",
+  previous: "⤝",
   cross: "✖"
 };
 
@@ -53,6 +58,32 @@ export const QUIENES_SOMOS = {
           "Convertirnos en una empresa distinguida y renombrada en el ambiente gastronómico, tanto por los sistemas de trabajo aplicables como así también por la calidad de nuestros servicios, pudiendo en ese sentido, lograr la atención de los más exigentes.",
         image: visionImage
       }
+    }
+  }
+};
+
+export const VIANDAS = {
+  title: "Nuestras viandas",
+  lunchTypes: {
+    transporte: {
+      title: "Para Transporte",
+      description:
+        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte"
+    },
+    empresas: {
+      title: "Para Empresas",
+      description:
+        "Acá iría un texto descriptivo que haga referencia a las viandas para empresas"
+    },
+    particulares: {
+      title: "Particulares",
+      description:
+        "Acá iría un texto descriptivo que haga referencia a las viandas particulares"
+    },
+    egresados: {
+      title: "Egresados",
+      description:
+        "Acá iría un texto descriptivo que haga referencia a las viandas para egresados"
     }
   }
 };
