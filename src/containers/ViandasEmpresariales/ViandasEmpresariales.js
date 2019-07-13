@@ -27,8 +27,8 @@ class Viandas extends Component {
     return (
       <section className="Viandas">
         <div className="Content">
-          <h2 className="Content__Title"> {VIANDAS.title}</h2>
-          <LunchsList lunchs={this.getLunchs()} />
+          <h2 className="Content__Title"> {VIANDAS.title}</h2>             
+          <LunchsList lunchs={this.getLunchs()} />       
           <LunchsSlider slides={slidesArray} />
         </div>
       </section>

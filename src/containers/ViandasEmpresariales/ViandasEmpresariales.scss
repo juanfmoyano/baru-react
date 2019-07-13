@@ -10,8 +10,8 @@
   & .Content {
     @include content();
 
-    @include smallDevices(){
-      margin: $spacing-s;
+    @include smallDevices() {
+      margin: 0 $spacing-s;
     }
 
     &__Title {

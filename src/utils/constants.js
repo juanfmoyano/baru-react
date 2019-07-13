@@ -21,7 +21,12 @@ export const ROUTES_LABELS = {
 };
 
 export const SIDEMENU = {
-  title: "Barú gastronomía",
+  title: "Barú gastronomía"
+};
+
+export const ICONS_LABELS = {
+  next: "⤞",
+  previous: "⤝",
   cross: "✖"
 };
 
@@ -62,19 +67,23 @@ export const VIANDAS = {
   lunchTypes: {
     transporte: {
       title: "Para Transporte",
-      description: "Acá iría un texto descriptivo que haga referencia a las viandas para transporte"
+      description:
+        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte"
     },
     empresas: {
       title: "Para Empresas",
-      description: "Acá iría un texto descriptivo que haga referencia a las viandas para empresas"
+      description:
+        "Acá iría un texto descriptivo que haga referencia a las viandas para empresas"
     },
     particulares: {
       title: "Particulares",
-      description: "Acá iría un texto descriptivo que haga referencia a las viandas particulares"
+      description:
+        "Acá iría un texto descriptivo que haga referencia a las viandas particulares"
     },
-    egresados: { 
+    egresados: {
       title: "Egresados",
-      description: "Acá iría un texto descriptivo que haga referencia a las viandas para egresados"
+      description:
+        "Acá iría un texto descriptivo que haga referencia a las viandas para egresados"
     }
   }
-}
+};

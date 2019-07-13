@@ -2,48 +2,24 @@
 @import "../../../../styles/mixins";
 
 .LunchItem {
+  display: flex;
+  flex-direction: column;
   margin: $spacing-l;
   border-radius: $spacing-l;
-  background-color: $main-blue-gradient;
+  background-color: $white-gradient;
   box-shadow: 5px 10px 8px 10px #888888;
-  color: $white;
-  text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black;
+  color: $main-blue;
+  text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
 
   &__Title {
     text-align: center;
   }
 
   &__Separator {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &--1 {
-      height: 3px;
-      background-color: white;
-      width: 100%;
-      margin: 2px;
-      border: 1px solid black;
-    }
-
-    &--2 {
-      height: 2px;
-      background-color: white;
-      width: 95%;
-      margin: 2px;
-      border-radius: 3px;
-      border: 1px solid black;
-    }
-
-    &--3 {
-      height: 1px;
-      background-color: white;
-      width: 90%;
-      margin: 2px;
-      border-radius: 3px;
-      border: 1px solid black;
-    }
+    align-self: center;
+    width: 80%;
+    height: 2px;
+    background-color: $main-blue;
   }
 
   &__Description {
