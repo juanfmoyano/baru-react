@@ -6,9 +6,16 @@ import "./Dots.scss";
 
 class Dots extends Component {
   createDots() {
-    return this.props.dots.map(dot => {
+    return this.props.dots.map((dot, dotIndex) => {
       const active = dot === this.props.activeDot;
-      return <Dot key={dot} active={active} />;
+      return (
+        <Dot
+          key={dot}
+          active={active}
+          clicked={this.props.dotAction}
+          index={dotIndex}
+        />
+      );
     });
   }
   render() {

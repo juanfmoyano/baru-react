@@ -12,8 +12,15 @@ class SideMenu extends Component {
     const className = this.props.open ? "SideMenu" : "SideMenu Inactive";
     return (
       <div className={className}>
-        <SideMenuHeader closeMenu={this.props.closeMenu} menuTitle={SIDEMENU.title}/>
-        <SideMenuOptions closeMenu={this.props.closeMenu} options={this.props.options} />
+        <SideMenuHeader
+          closeMenu={this.props.closeMenu}
+          menuTitle={SIDEMENU.title}
+          closeMenuIcon={SIDEMENU.icon}
+        />
+        <SideMenuOptions
+          closeMenu={this.props.closeMenu}
+          options={this.props.options}
+        />
       </div>
     );
   }

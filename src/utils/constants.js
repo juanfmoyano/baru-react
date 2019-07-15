@@ -1,7 +1,32 @@
 import quienesSomosLogo from "assets/images/baru.png";
-import missionImage from "assets/images/quienes-somos/about-mission.png";
-import planImage from "assets/images/quienes-somos/about-compromise.png";
-import visionImage from "assets/images/quienes-somos/about-vision.png";
+
+// ----- ICONS -----
+// SideMenu
+
+import {faTimes} from "@fortawesome/free-solid-svg-icons";
+
+// Quienes somos
+import {
+  faListAlt,
+  faBook,
+  faEye
+} from "@fortawesome/free-solid-svg-icons";
+
+// Viandas
+import {
+  faArrowLeft,
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
+
+// Contacto
+import {
+  faHandshake,
+  faShoppingCart,
+  faTruckMoving,
+  faUsers
+} from "@fortawesome/free-solid-svg-icons";
+
+// ----------
 
 export const HEADER_LABELS = {
   title: "Barú Gastronomía"
@@ -21,13 +46,8 @@ export const ROUTES_LABELS = {
 };
 
 export const SIDEMENU = {
-  title: "Barú gastronomía"
-};
-
-export const ICONS_LABELS = {
-  next: "⤞",
-  previous: "⤝",
-  cross: "✖"
+  title: "Barú gastronomía",
+  icon: faTimes
 };
 
 export const QUIENES_SOMOS = {
@@ -44,19 +64,19 @@ export const QUIENES_SOMOS = {
         title: "Misión",
         description:
           "Poder ofrecer a nuestros comensales, diferentes opciones gastronómicas en el marco del tipo de servicio que nos sea requerido.",
-        image: missionImage
+        icon: faListAlt
       },
       compromise: {
         title: "Compromiso y filosofía",
         description:
           "Consideramos que la gastronomía representa en nuestra empresa, las raíces que nos adhieren a nuestro desarrollo laboral y económico. Por otro lado, la honestidad es la base filosófica sobre la que reposan nuestros sueños. Entendemos a la gastronomía en un concepto amplio, que va más allá del sabor o aroma de un plato en particular, pues buscamos dejar una experiencia única-de todos los sentidos- en nuestros comensales.",
-        image: planImage
+        icon: faBook
       },
       vision: {
         title: "Visión",
         description:
           "Convertirnos en una empresa distinguida y renombrada en el ambiente gastronómico, tanto por los sistemas de trabajo aplicables como así también por la calidad de nuestros servicios, pudiendo en ese sentido, lograr la atención de los más exigentes.",
-        image: visionImage
+        icon: faEye
       }
     }
   }
@@ -84,6 +104,36 @@ export const VIANDAS = {
       title: "Egresados",
       description:
         "Acá iría un texto descriptivo que haga referencia a las viandas para egresados"
+    }
+  },
+  icons: {
+    backward: faArrowLeft,
+    forward: faArrowRight
+  }
+};
+
+export const CONTACTO = {
+  title: "Contacto",
+  sections: {
+    servicios: {
+      title: "Servicios",
+      description: "Texto que describa servicios",
+      icon: faShoppingCart
+    },
+    proveedores: {
+      title: "Proveedores",
+      description: "Texto que describa proveedores",
+      icon: faTruckMoving
+    },
+    administracion: {
+      title: "Administración",
+      description: "Texto que describa administración",
+      icon: faHandshake
+    },
+    recursos: {
+      title: "Recursos Humanos",
+      description: "Texto que describa recursos humanos",
+      icon: faUsers
     }
   }
 };

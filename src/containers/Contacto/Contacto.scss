@@ -1,7 +1,33 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
 .Contacto {
-  .Image {
-    display: block;
-    width: 100%;
-    height: auto;
+  background-image: linear-gradient(to bottom, $white-gradient, $white),
+    url("../../assets/background/background4.jpg");
+  min-height: 100vh;
+  @include background-image();
+
+  & .Content {
+    @include content();
+
+    @include smallDevices() {
+      margin: 0 $spacing-s;
+    }
+
+    &__Title {
+      @include secondary-title();
+      color: $black;
+      text-shadow: $text-shadow-white;
+    }
+
+    &__Section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      & .Area{
+        flex: 0 1 100%;
+      }
+    }
   }
 }

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LunchSlide from "./LunchSlide/LunchSlide";
-
-import { ICONS_LABELS } from "utils/constants";
-import { createDotsArray } from "utils/helpers/dotHelper";
-
 import Dots from "./Dots/Dots";
+
+import { createDotsArray } from "utils/helpers/dotHelper";
 
 import "./LunchsSlider.scss";
 
@@ -34,6 +34,10 @@ class LunchsSlider extends Component {
     this.setState({ activeSlideIndex: nextIndex });
   }
 
+  dotSelectionHandler(dotIndex) {
+    this.setState({ activeSlideIndex: dotIndex });
+  }
+
   render() {
     const dotsArray = createDotsArray(this.props.slides.length);
     return (
@@ -42,17 +46,21 @@ class LunchsSlider extends Component {
           className="LunchsSlider__Previous"
           onClick={() => this.previousImageHandler()}
         >
-          {ICONS_LABELS.previous}
+          <FontAwesomeIcon icon={this.props.iconPrevious} />
         </div>
         <div className="LunchsSlider__Show">
           {this.createLunchSlides()}
-          <Dots dots={dotsArray} activeDot={this.state.activeSlideIndex} />
+          <Dots
+            dots={dotsArray}
+            activeDot={this.state.activeSlideIndex}
+            dotAction={dotIndex => this.dotSelectionHandler(dotIndex)}
+          />
         </div>
         <div
           className="LunchsSlider__Next"
           onClick={() => this.nextImageHandler()}
         >
-          {ICONS_LABELS.next}
+          <FontAwesomeIcon icon={this.props.iconNext} />
         </div>
       </div>
     );
