@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import { QUIENES_SOMOS } from "utils/constants";
+import { transformObjectToArray } from "utils/helpers/objectsHelper";
 
 import OrganizationCardsList from "./OrganizationCards/OrganizationCardsList";
 
@@ -8,12 +9,7 @@ import "./Organization.scss";
 
 class Organization extends Component {
   getCards() {
-    const cards = QUIENES_SOMOS.organization.cards;
-    const cardsArray = [];
-    Object.keys(cards).forEach(card => {
-      cardsArray.push(cards[card]);
-    });
-    return cardsArray;
+    return transformObjectToArray(QUIENES_SOMOS.organization.cards);
   }
   render() {
     return (

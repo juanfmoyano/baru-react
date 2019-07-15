@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./Area.scss";
 
 class Area extends Component {
   render() {
-    const classes = this.props.reverse ? "Area Reverse" : "Area";
+    const classes = `Area ${this.props.class} ${
+      this.props.reverse ? "Reverse" : ""
+    }`;
     return (
       <div className={classes}>
         <div className="Area__Icon">

@@ -3,38 +3,21 @@ import "./Contacto.scss";
 
 import { CONTACTO } from "utils/constants";
 
+import { transformObjectToArray } from "utils/helpers/objectsHelper";
+
 import Area from "./Area/Area";
 
 class Contacto extends Component {
+  createAreas() {
+    const areasArray = transformObjectToArray(CONTACTO.sections);
+    return areasArray.map(area => <Area key={area.title} {...area} />);
+  }
   render() {
     return (
       <section className="Contacto">
         <div className="Content">
           <h2 className="Content__Title"> {CONTACTO.title}</h2>
-          <div className="Content__Section">
-            <Area
-              title={CONTACTO.sections.servicios.title}
-              description={CONTACTO.sections.servicios.description}
-              icon={CONTACTO.sections.servicios.icon}
-            />            
-            <Area
-              title={CONTACTO.sections.proveedores.title}
-              description={CONTACTO.sections.proveedores.description}
-              icon={CONTACTO.sections.proveedores.icon}
-              reverse={true}
-            />
-            <Area
-              title={CONTACTO.sections.administracion.title}
-              description={CONTACTO.sections.administracion.description}
-              icon={CONTACTO.sections.administracion.icon}
-            />
-            <Area
-              title={CONTACTO.sections.recursos.title}
-              description={CONTACTO.sections.recursos.description}
-              icon={CONTACTO.sections.recursos.icon}
-              reverse={true}
-            />
-          </div>
+          <div className="Content__Section">{this.createAreas()}</div>
         </div>
       </section>
     );

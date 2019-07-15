@@ -123,22 +123,30 @@ export const CONTACTO = {
     servicios: {
       title: "Servicios",
       description: "Texto que describa servicios",
-      icon: faShoppingCart
+      icon: faShoppingCart,
+      reverse: false,
+      class: "Servicios"
     },
     proveedores: {
       title: "Proveedores",
       description: "Texto que describa proveedores",
-      icon: faTruckMoving
+      icon: faTruckMoving,
+      reverse: true,
+      class: "Proveedores"
     },
     administracion: {
       title: "Administración",
       description: "Texto que describa administración",
-      icon: faHandshake
+      icon: faHandshake,
+      reverse: false,
+      class: "Administracion"
     },
     recursos: {
       title: "Recursos Humanos",
       description: "Texto que describa recursos humanos",
-      icon: faUsers
+      icon: faUsers,
+      reverse: true,
+      class: "Recursos"
     }
   }
 };

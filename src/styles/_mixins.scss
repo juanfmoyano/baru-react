@@ -49,7 +49,7 @@
 
 @mixin secondary-title() {
   font-family: Georgia, serif;
-  font-size: $font-size-xl;
+  font-size: $font-size-xxxl;
   text-align: center;
   text-transform: uppercase;
   @include title-decoration();

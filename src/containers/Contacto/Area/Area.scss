@@ -1,23 +1,24 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .Area {
   display: flex;
-  background-color: $main-blue;
-  color: $white;
   margin: $spacing-s;
-
-  &.Reverse {
-    flex-direction: row-reverse;
-  }
+  color: $white;
 
   &__Icon {
     flex: 0 1 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 100px;
     background-color: $white;
     color: $main-blue;
+    font-size: 100px;
+  }
+
+  &__Title,
+  &__Description {
+    text-shadow: $text-shadow-black;
   }
 
   &__Details {
@@ -30,7 +31,36 @@
 
   &__Contacto {
     padding: $spacing-s;
-    background-color: $white;
-    color: $main-blue;
+    background-color: $main-blue;
+    color: $white;
+    font-weight: bold;
+  }
+
+  &.Reverse {
+    flex-direction: row-reverse;
+  }
+
+  &.Servicios {
+    @include background-image;
+    background-image: url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/various-spices-and-herbs-website-header.jpg");
+    background-attachment: unset;
+  }
+
+  &.Proveedores {
+    @include background-image;
+    background-image: url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/french-fries-natural-food-website-header-image.jpg");
+    background-attachment: unset;
+  }
+
+  &.Administracion {
+    @include background-image;
+    background-image: url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/popular-food-meal-website-header.jpg");
+    background-attachment: unset;
+  }
+
+  &.Recursos {
+    @include background-image;
+    background-image: url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/food-header-image.jpg");
+    background-attachment: unset;
   }
 }
