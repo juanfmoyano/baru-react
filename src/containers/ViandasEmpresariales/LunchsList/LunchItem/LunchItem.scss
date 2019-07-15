@@ -4,23 +4,27 @@
 .LunchItem {
   display: flex;
   flex-direction: column;
-  background-color: $white-gradient;
+  background-color: $main-blue;
   box-shadow: $box-shadow;
-  text-shadow: $text-shadow-white;
+  color: $white;
 
   &__Title {
     text-align: center;
   }
 
-  &__Separator {
-    align-self: center;
-    width: 80%;
-    height: 2px;
-    background-color: $main-blue;
+  &__Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing-s;
+    font-size: 50px;
   }
 
   &__Description {
     padding: $spacing-s;
     margin: 0;
+  }
+
+  &:hover {
   }
 }

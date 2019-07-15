@@ -13,7 +13,6 @@ const presentationCard = props => {
           className="OrganizationCard__Icon"
           icon={props.icon}
           size={"2x"}
-          spin
         />
       </div>
       <p className="OrganizationCard__Description"> {props.description} </p>

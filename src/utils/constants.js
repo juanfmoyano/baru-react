@@ -3,20 +3,21 @@ import quienesSomosLogo from "assets/images/baru.png";
 // ----- ICONS -----
 // SideMenu
 
-import {faTimes} from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 // Quienes somos
+import { faListAlt, faBook, faEye } from "@fortawesome/free-solid-svg-icons";
+
+// Viandas - Cards
 import {
-  faListAlt,
-  faBook,
-  faEye
+  faGraduationCap,
+  faBuilding,
+  faBus,
+  faUserAlt
 } from "@fortawesome/free-solid-svg-icons";
 
-// Viandas
-import {
-  faArrowLeft,
-  faArrowRight
-} from "@fortawesome/free-solid-svg-icons";
+// Viandas - Slider
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 // Contacto
 import {
@@ -86,24 +87,28 @@ export const VIANDAS = {
   title: "Nuestras viandas",
   lunchTypes: {
     transporte: {
-      title: "Para Transporte",
+      title: "Transporte",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte"
+        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte",
+      icon: faBus
     },
     empresas: {
-      title: "Para Empresas",
+      title: "Empresas",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para empresas"
+        "Acá iría un texto descriptivo que haga referencia a las viandas para empresas",
+      icon: faBuilding
     },
     particulares: {
       title: "Particulares",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas particulares"
+        "Acá iría un texto descriptivo que haga referencia a las viandas particulares",
+      icon: faUserAlt
     },
     egresados: {
       title: "Egresados",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para egresados"
+        "Acá iría un texto descriptivo que haga referencia a las viandas para egresados",
+      icon: faGraduationCap
     }
   },
   icons: {

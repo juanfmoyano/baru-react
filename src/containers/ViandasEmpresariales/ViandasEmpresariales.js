@@ -28,12 +28,12 @@ class Viandas extends Component {
       <section className="Viandas">
         <div className="Content">
           <h2 className="Content__Title"> {VIANDAS.title}</h2>
-          <LunchsList lunchs={this.getLunchs()} />
           <LunchsSlider
             slides={slidesArray}
             iconPrevious={VIANDAS.icons.backward}
             iconNext={VIANDAS.icons.forward}
           />
+          <LunchsList lunchs={this.getLunchs()} />
         </div>
       </section>
     );
