@@ -25,11 +25,12 @@
     flex: 0 1 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: $spacing-s;
+    text-align: center;
   }
 
   &__Contacto {
+    align-self: center;
     padding: $spacing-s;
     background-color: $main-blue;
     color: $white;

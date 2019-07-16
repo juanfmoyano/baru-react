@@ -1,4 +1,6 @@
-import quienesSomosLogo from "assets/images/baru.png";
+import mainLogo from "assets/logos/baru.png";
+import barakaLogo from "assets/logos/baraka.png";
+import slbrasasLogo from "assets/logos/santas_las_brasas.png";
 
 // ----- ICONS -----
 // SideMenu
@@ -54,7 +56,11 @@ export const SIDEMENU = {
 export const QUIENES_SOMOS = {
   presentation: {
     slogan: '"Sólo es necesario mostrar otro camino"',
-    logo: quienesSomosLogo
+    mainLogo: mainLogo,
+    secondaryLogos: {
+      baraka: barakaLogo,
+      slbrasas: slbrasasLogo
+    }
   },
   organization: {
     title: "Quiénes somos",
