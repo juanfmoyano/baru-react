@@ -1,0 +1,9 @@
+.LogosList {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-evenly;
+
+    & .LogoItem{
+        flex: 0 1 25%;
+    }
+}

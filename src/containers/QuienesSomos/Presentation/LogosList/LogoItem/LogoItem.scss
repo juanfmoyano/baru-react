@@ -1,0 +1,13 @@
+@import "../../../../../styles/variables";
+
+.LogoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing-s;
+
+    &__Image{
+        width: 100%;
+        height: auto;
+    }
+}

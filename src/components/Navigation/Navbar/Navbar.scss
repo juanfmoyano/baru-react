@@ -3,6 +3,8 @@
 
 .Navbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 $spacing-l;
   background-color: $black;

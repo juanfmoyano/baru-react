@@ -44,8 +44,9 @@
     & .SideMenuToggle {
       display: none;
       @include largeDevices() {
-        display: flex;
         flex: 0 1 5%;
+        display: flex;
+        justify-content: center;
       }
     }
   }

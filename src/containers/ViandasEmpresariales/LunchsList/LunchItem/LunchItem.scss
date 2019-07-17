@@ -7,8 +7,12 @@
   background-color: $main-blue;
   box-shadow: $box-shadow;
   color: $white;
+  transition: all 0.5s ease-in-out;
 
   &__Title {
+    padding-bottom: $spacing-xxs;
+    border-bottom: $spacing-xxs solid $white;
+    margin: $spacing-xs $spacing-4xl;
     text-align: center;
   }
 
@@ -25,6 +29,5 @@
     margin: 0;
   }
 
-  &:hover {
-  }
+
 }

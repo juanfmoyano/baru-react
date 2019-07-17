@@ -1,6 +1,8 @@
 import mainLogo from "assets/logos/baru.png";
 import barakaLogo from "assets/logos/baraka.png";
 import slbrasasLogo from "assets/logos/santas_las_brasas.png";
+import rdBosqueLogo from "assets/logos/resto_del_bosque.png";
+import baruEventosLogo from "assets/logos/baru_eventos/baru_fuente1.png";
 
 // ----- ICONS -----
 // SideMenu
@@ -58,7 +60,9 @@ export const QUIENES_SOMOS = {
     slogan: '"Sólo es necesario mostrar otro camino"',
     mainLogo: mainLogo,
     secondaryLogos: {
+      baruEventos: baruEventosLogo,
       baraka: barakaLogo,
+      rdBosque: rdBosqueLogo,
       slbrasas: slbrasasLogo
     }
   },
