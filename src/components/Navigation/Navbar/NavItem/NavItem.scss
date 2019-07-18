@@ -4,23 +4,28 @@
 .NavItem {
   padding: $spacing-ss;
   text-align: center;
-  
+
   & a {
     color: $white;
     font-size: $font-size-s;
     text-decoration: none;
     text-transform: uppercase;
 
-    &:hover,
-    &:active,
-    &.active {
-      color: $main-blue;
-    }
-    &.active{
+    &:hover {
       font-weight: bold;
     }
 
-    &:not(.active):after{
+    &:active,
+    &.active {
+      font-size: $font-size-m;
+      font-weight: bold;
+    }
+    
+    &.active {
+      font-weight: bold;
+    }
+
+    &:not(.active):after {
       display: block;
       content: "";
       border-bottom: 2px solid $main-blue;
