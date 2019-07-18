@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import './SideMenuToggle.scss';;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const sideMenuToggle = (props) => {  
-    return (
+import "./SideMenuToggle.scss";
+
+const sideMenuToggle = props => {
+  return (
     <div className="SideMenuToggle" onClick={() => props.openMenu()}>
-        <div className="ToggleElement"></div>
-        <div className="ToggleElement"></div>
-        <div className="ToggleElement"></div>
+      <FontAwesomeIcon icon={faBars} size={'2x'} />
     </div>
-)};
+  );
+};
 
 export default sideMenuToggle;

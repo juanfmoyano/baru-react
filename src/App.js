@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 
 // Routes info
-import { getRoutesInfo } from "utils/routing/routesInfo";
+import { getRoutesInfoAsArray } from "utils/routing/routesInfo";
+
 import Layout from "hoc/Layout/Layout";
 
 import "./App.scss";
 
 class App extends Component {
   createSwitchRoutes() {
-    const routesInfo = getRoutesInfo();
+    const routesInfo = getRoutesInfoAsArray();
     return routesInfo.map(route => (
       <Route
         key={route.path}

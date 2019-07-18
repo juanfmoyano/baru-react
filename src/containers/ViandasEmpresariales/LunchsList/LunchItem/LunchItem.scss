@@ -4,26 +4,30 @@
 .LunchItem {
   display: flex;
   flex-direction: column;
-  margin: $spacing-l;
-  border-radius: $spacing-l;
-  background-color: $white-gradient;
-  box-shadow: 5px 10px 8px 10px #888888;
-  color: $main-blue;
-  text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
+  background-color: $main-blue;
+  box-shadow: $box-shadow;
+  color: $white;
+  transition: all 0.5s ease-in-out;
 
   &__Title {
+    padding-bottom: $spacing-xxs;
+    border-bottom: $spacing-xxs solid $white;
+    margin: $spacing-xs $spacing-4xl;
     text-align: center;
   }
 
-  &__Separator {
-    align-self: center;
-    width: 80%;
-    height: 2px;
-    background-color: $main-blue;
+  &__Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing-s;
+    font-size: 50px;
   }
 
   &__Description {
     padding: $spacing-s;
     margin: 0;
   }
+
+
 }

@@ -1,7 +1,37 @@
-import quienesSomosLogo from "assets/images/baru.png";
-import missionImage from "assets/images/quienes-somos/about-mission.png";
-import planImage from "assets/images/quienes-somos/about-compromise.png";
-import visionImage from "assets/images/quienes-somos/about-vision.png";
+import mainLogo from "assets/logos/baru.png";
+import barakaLogo from "assets/logos/baraka.png";
+import slbrasasLogo from "assets/logos/santas_las_brasas.png";
+import rdBosqueLogo from "assets/logos/resto_del_bosque.png";
+import baruEventosLogo from "assets/logos/baru_eventos/baru_fuente1.png";
+
+// ----- ICONS -----
+// SideMenu
+
+import { faTimes, faSitemap, faSeedling, faUtensils, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+
+// Quienes somos
+import { faListAlt, faBook, faEye } from "@fortawesome/free-solid-svg-icons";
+
+// Viandas - Cards
+import {
+  faGraduationCap,
+  faBuilding,
+  faBus,
+  faUserAlt
+} from "@fortawesome/free-solid-svg-icons";
+
+// Viandas - Slider
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+// Contacto
+import {
+  faHandshake,
+  faShoppingCart,
+  faTruckMoving,
+  faUsers
+} from "@fortawesome/free-solid-svg-icons";
+
+// ----------
 
 export const HEADER_LABELS = {
   title: "Barú Gastronomía"
@@ -15,25 +45,32 @@ export const FOOTER_LABELS = {
 
 export const ROUTES_LABELS = {
   quienesSomos: "¿Quiénes somos?",
-  nuestrosEmprendimientos: "Nuestros emprendimientos",
-  viandasEmpresariales: "Viandas empresariales",
+  nuestrosEmprendimientos: "Servicios",
+  viandasEmpresariales: "Nuestras viandas",
   contacto: "Contacto"
 };
 
 export const SIDEMENU = {
-  title: "Barú gastronomía"
-};
-
-export const ICONS_LABELS = {
-  next: "⤞",
-  previous: "⤝",
-  cross: "✖"
+  title: "Barú gastronomía",
+  icon: faTimes,
+  itemIcons: {
+    quienesSomos: faSitemap,
+    nuestrosEmprendimientos: faSeedling,
+    viandasEmpresariales: faUtensils,
+    contacto: faEnvelope
+  }
 };
 
 export const QUIENES_SOMOS = {
   presentation: {
     slogan: '"Sólo es necesario mostrar otro camino"',
-    logo: quienesSomosLogo
+    mainLogo: mainLogo,
+    secondaryLogos: {
+      baruEventos: baruEventosLogo,
+      baraka: barakaLogo,
+      rdBosque: rdBosqueLogo,
+      slbrasas: slbrasasLogo
+    }
   },
   organization: {
     title: "Quiénes somos",
@@ -44,19 +81,19 @@ export const QUIENES_SOMOS = {
         title: "Misión",
         description:
           "Poder ofrecer a nuestros comensales, diferentes opciones gastronómicas en el marco del tipo de servicio que nos sea requerido.",
-        image: missionImage
+        icon: faListAlt
       },
       compromise: {
         title: "Compromiso y filosofía",
         description:
           "Consideramos que la gastronomía representa en nuestra empresa, las raíces que nos adhieren a nuestro desarrollo laboral y económico. Por otro lado, la honestidad es la base filosófica sobre la que reposan nuestros sueños. Entendemos a la gastronomía en un concepto amplio, que va más allá del sabor o aroma de un plato en particular, pues buscamos dejar una experiencia única-de todos los sentidos- en nuestros comensales.",
-        image: planImage
+        icon: faBook
       },
       vision: {
         title: "Visión",
         description:
           "Convertirnos en una empresa distinguida y renombrada en el ambiente gastronómico, tanto por los sistemas de trabajo aplicables como así también por la calidad de nuestros servicios, pudiendo en ese sentido, lograr la atención de los más exigentes.",
-        image: visionImage
+        icon: faEye
       }
     }
   }
@@ -66,24 +103,66 @@ export const VIANDAS = {
   title: "Nuestras viandas",
   lunchTypes: {
     transporte: {
-      title: "Para Transporte",
+      title: "Transporte",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte"
+        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte",
+      icon: faBus
     },
     empresas: {
-      title: "Para Empresas",
+      title: "Empresas",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para empresas"
+        "Acá iría un texto descriptivo que haga referencia a las viandas para empresas",
+      icon: faBuilding
     },
     particulares: {
       title: "Particulares",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas particulares"
+        "Acá iría un texto descriptivo que haga referencia a las viandas particulares",
+      icon: faUserAlt
     },
     egresados: {
       title: "Egresados",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para egresados"
+        "Acá iría un texto descriptivo que haga referencia a las viandas para egresados",
+      icon: faGraduationCap
+    }
+  },
+  icons: {
+    backward: faArrowLeft,
+    forward: faArrowRight
+  }
+};
+
+export const CONTACTO = {
+  title: "Contacto",
+  sections: {
+    servicios: {
+      title: "Servicios",
+      description: "Texto que describa servicios",
+      icon: faShoppingCart,
+      reverse: false,
+      class: "Servicios"
+    },
+    proveedores: {
+      title: "Proveedores",
+      description: "Texto que describa proveedores",
+      icon: faTruckMoving,
+      reverse: true,
+      class: "Proveedores"
+    },
+    administracion: {
+      title: "Administración",
+      description: "Texto que describa administración",
+      icon: faHandshake,
+      reverse: false,
+      class: "Administracion"
+    },
+    recursos: {
+      title: "Recursos Humanos",
+      description: "Texto que describa recursos humanos",
+      icon: faUsers,
+      reverse: true,
+      class: "Recursos"
     }
   }
 };

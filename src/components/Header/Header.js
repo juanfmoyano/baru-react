@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Navbar from "components/Navigation/Navbar/Navbar";
 import SideMenuToggle from "components/Navigation/SideMenu/SideMenuToggle/SideMenuToggle";
 import Logo from "components/UI/Logo/Logo";
-import BaruLogo from "assets/logo/baru.png";
+import BaruLogo from "assets/images/baru.png";
 
 import { HEADER_LABELS } from "utils/constants";
 

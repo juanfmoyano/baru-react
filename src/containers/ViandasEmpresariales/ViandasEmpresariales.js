@@ -4,17 +4,14 @@ import "./ViandasEmpresariales.scss";
 import "./LunchsList/LunchsList";
 
 import { VIANDAS } from "utils/constants";
+import { transformObjectToArray } from "utils/helpers/objectsHelper";
+
 import LunchsList from "./LunchsList/LunchsList";
 import LunchsSlider from "./LunchsSlider/LunchsSlider";
 
 class Viandas extends Component {
   getLunchs() {
-    const lunchs = VIANDAS.lunchTypes;
-    const lunchsArray = [];
-    Object.keys(lunchs).forEach(lunch => {
-      lunchsArray.push(lunchs[lunch]);
-    });
-    return lunchsArray;
+    return transformObjectToArray(VIANDAS.lunchTypes);
   }
 
   render() {
@@ -27,9 +24,13 @@ class Viandas extends Component {
     return (
       <section className="Viandas">
         <div className="Content">
-          <h2 className="Content__Title"> {VIANDAS.title}</h2>             
-          <LunchsList lunchs={this.getLunchs()} />       
-          <LunchsSlider slides={slidesArray} />
+          <h2 className="Content__Title"> {VIANDAS.title}</h2>
+          <LunchsSlider
+            slides={slidesArray}
+            iconPrevious={VIANDAS.icons.backward}
+            iconNext={VIANDAS.icons.forward}
+          />
+          <LunchsList lunchs={this.getLunchs()} />
         </div>
       </section>
     );

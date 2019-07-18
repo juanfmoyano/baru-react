@@ -4,8 +4,7 @@
 .NavItem {
   padding: $spacing-ss;
   text-align: center;
-  list-style: none;
-
+  
   & a {
     color: $white;
     font-size: $font-size-s;
@@ -17,7 +16,6 @@
     &.active {
       color: $main-blue;
     }
-
     &.active{
       font-weight: bold;
     }

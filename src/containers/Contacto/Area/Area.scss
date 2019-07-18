@@ -1,0 +1,108 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.Area {
+  display: flex;
+  margin: $spacing-s;
+  color: $white;
+
+  @include smallDevices(){
+    flex-direction: column;
+  }
+
+  &__Icon {
+    flex: 0 1 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: $spacing-l;
+    color: $white;
+
+    @include smallDevices(){
+      display: none;
+    }
+    
+    & svg {
+      width: 100% !important;
+      height: auto;
+
+      @include smallDevices(){
+        width: 50% !important;
+      }
+    }
+  }
+
+  &__Title,
+  &__Description {
+    text-shadow: $text-shadow-black;
+  }
+
+  &__Details {
+    flex: 0 1 80%;
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-s;
+    text-align: center;
+
+    @include smallDevices(){
+      flex: 0 1 100%;
+    }
+  }
+
+  &__Contacto {
+    align-self: center;
+    padding: $spacing-s;
+    background-color: $main-blue;
+    color: $white;
+    font-weight: bold;
+  }
+
+  &.Reverse {
+    flex-direction: row-reverse;
+
+    @include smallDevices(){
+      flex-direction: column;
+    }
+  }
+
+  &.Servicios {
+    @include background-image;
+    background-image: linear-gradient(to right, $main-blue, $white-gradient), url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/various-spices-and-herbs-website-header.jpg");
+    background-attachment: unset;
+    @include smallDevices(){
+      background-image: none;
+      background-color: $main-blue;
+    }
+  }
+
+  &.Proveedores {
+    @include background-image;
+    background-image: linear-gradient(to left, $main-blue, $white-gradient),url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/french-fries-natural-food-website-header-image.jpg");
+    background-attachment: unset;
+    @include smallDevices(){
+      background-image: none;
+      background-color: $main-blue;
+    }
+  }
+
+  &.Administracion {
+    @include background-image;
+    background-image: linear-gradient(to right, $main-blue, $white-gradient),url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/popular-food-meal-website-header.jpg");
+    background-attachment: unset;
+    @include smallDevices(){
+      background-image: none;
+      background-color: $main-blue;
+    }
+  }
+
+  &.Recursos {
+    @include background-image;
+    background-image: linear-gradient(to left, $main-blue, $white-gradient),url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/food-header-image.jpg");
+    background-attachment: unset;
+    @include smallDevices(){
+      background-image: none;
+      background-color: $main-blue;
+    }
+  }
+}

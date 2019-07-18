@@ -1,13 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 
 import "./LunchItem.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const lunchItem = props => (
-  <div className="LunchItem">
-    <p className="LunchItem__Title"> {props.title} </p>
-    <div className="LunchItem__Separator" />
-    <p className="LunchItem__Description"> {props.description} </p>
-  </div>
-);
+class LunchItem extends Component {
+  render() {
+    return (
+      <div className="LunchItem">
+        <div className="LunchItem__Icon">
+          <FontAwesomeIcon icon={this.props.icon} />
+        </div>
+        <p className="LunchItem__Title"> {this.props.title} </p>
+        <p className="LunchItem__Description"> {this.props.description} </p>
+      </div>
+    );
+  }
+}
 
-export default lunchItem;
+export default LunchItem;

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "./OrganizationCard.scss";
 
 const presentationCard = props => {
@@ -7,7 +9,11 @@ const presentationCard = props => {
     <div className="OrganizationCard">
       <div className="OrganizationCard__Title">
         <p className="OrganizationCard__Label"> {props.title} </p>
-        <img className="OrganizationCard__Icon" src={props.image} alt="Card" />
+        <FontAwesomeIcon
+          className="OrganizationCard__Icon"
+          icon={props.icon}
+          size={"2x"}
+        />
       </div>
       <p className="OrganizationCard__Description"> {props.description} </p>
     </div>

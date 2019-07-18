@@ -2,7 +2,7 @@
 @import "../../styles/mixins";
 
 .Viandas {
-  background-image: linear-gradient(to bottom, $white-gradient, $white),
+  background-image: //linear-gradient(to bottom, $white-gradient, $white),
     url("../../assets/background/background3.jpg");
   min-height: 100vh;
   @include background-image();
@@ -16,8 +16,8 @@
 
     &__Title {
       @include secondary-title();
-      color: $black;
-      text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
+      color: $white;
+      text-shadow: $text-shadow-black;
     }
   }
 }
