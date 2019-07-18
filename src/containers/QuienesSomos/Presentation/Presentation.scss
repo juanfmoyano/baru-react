@@ -8,6 +8,10 @@
   & .Content {
     @include content();
 
+    @include smallDevices(){
+      margin: 0 $spacing-s;
+    }
+
     &__Logo {
       width: 50%;
       height: 100%;

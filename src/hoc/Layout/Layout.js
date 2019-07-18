@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+
+import { transformObjectToArray } from "utils/helpers/objectsHelper";
+
 // Redux
 import { connect } from "react-redux";
 import * as menuActions from "store/actions/menu/actions";
@@ -12,18 +15,28 @@ import Backdrop from "components/UI/Backdrop/Backdrop";
 import Footer from "components/Footer/Footer";
 
 // Utilities
-import { getRoutesInfo } from "../../utils/routing/routesInfo";
+import {
+  getRoutesInfo
+} from "utils/routing/routesInfo";
+import { SIDEMENU } from "utils/constants";
 
 class Layout extends Component {
   render() {
-    const routesInfo = getRoutesInfo();
+    const routesInfoObject = getRoutesInfo();
+    Object.keys(routesInfoObject).forEach(route => {
+      routesInfoObject[route] = {
+        ...routesInfoObject[route],
+        icon: SIDEMENU.itemIcons[route]
+      };
+    });
+    const routesInfoArray = transformObjectToArray(routesInfoObject);
     return (
       <Wrapper>
-        <Header navOptions={routesInfo} openMenu={this.props.openMenu} />
+        <Header navOptions={routesInfoArray} openMenu={this.props.openMenu} />
         <SideMenu
           open={this.props.open}
           closeMenu={this.props.closeMenu}
-          options={routesInfo}
+          options={routesInfoArray}
         />
         <Backdrop show={this.props.open} clicked={this.props.closeMenu} />
         <main className="Main">{this.props.children}</main>

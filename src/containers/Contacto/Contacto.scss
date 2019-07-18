@@ -2,7 +2,7 @@
 @import "../../styles/mixins";
 
 .Contacto {
-  background-image: linear-gradient(to bottom, $white-gradient, $white),
+  background-image: //linear-gradient(to bottom, $white-gradient, $white),
     url("../../assets/background/background4.jpg");
   min-height: 100vh;
   @include background-image();
@@ -16,17 +16,21 @@
 
     &__Title {
       @include secondary-title();
-      color: $black;
-      text-shadow: $text-shadow-white;
+      color: $white;
+      text-shadow: $text-shadow-black;
     }
 
     &__Section {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       width: 100%;
 
       & .Area{
-        flex: 0 1 100%;
+        flex: 0 1 46%;
+
+        @include smallDevices(){
+          flex: 0 1 100%;
+        }
       }
     }
   }

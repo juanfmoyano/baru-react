@@ -7,7 +7,7 @@ import baruEventosLogo from "assets/logos/baru_eventos/baru_fuente1.png";
 // ----- ICONS -----
 // SideMenu
 
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faSitemap, faSeedling, faUtensils, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 // Quienes somos
 import { faListAlt, faBook, faEye } from "@fortawesome/free-solid-svg-icons";
@@ -45,14 +45,20 @@ export const FOOTER_LABELS = {
 
 export const ROUTES_LABELS = {
   quienesSomos: "¿Quiénes somos?",
-  nuestrosEmprendimientos: "Nuestros emprendimientos",
-  viandasEmpresariales: "Viandas empresariales",
+  nuestrosEmprendimientos: "Servicios",
+  viandasEmpresariales: "Nuestras viandas",
   contacto: "Contacto"
 };
 
 export const SIDEMENU = {
   title: "Barú gastronomía",
-  icon: faTimes
+  icon: faTimes,
+  itemIcons: {
+    quienesSomos: faSitemap,
+    nuestrosEmprendimientos: faSeedling,
+    viandasEmpresariales: faUtensils,
+    contacto: faEnvelope
+  }
 };
 
 export const QUIENES_SOMOS = {

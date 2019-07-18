@@ -5,6 +5,7 @@ import Viandas from "containers/ViandasEmpresariales/ViandasEmpresariales";
 import Contacto from "containers/Contacto/Contacto";
 
 import { ROUTES_LABELS } from "utils/constants";
+
 import { transformObjectToArray } from "utils/helpers/objectsHelper";
 
 const routesInfo = {
@@ -35,5 +36,9 @@ const routesInfo = {
 };
 
 export function getRoutesInfo() {
+  return routesInfo;
+}
+
+export function getRoutesInfoAsArray(){
   return transformObjectToArray(routesInfo);
 }

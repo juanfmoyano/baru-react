@@ -3,18 +3,38 @@
 
 .SideMenuItem {
   display: flex;
-  justify-content: center;
+  align-items: stretch;
   margin: $spacing-xs $spacing-l;
-  border-bottom: $white solid $spacing-xxs;
 
-  & a {
-    padding: $spacing-xs;
+  &__Icon {
+    flex: 0 1 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $white;
-    font-size: $font-size-m;
-    text-decoration: none;
 
-    @include smallDevices() {
-      font-size: $font-size-s;
+    & svg {
+      width: 80% !important;
+      height: auto;
+      max-width: 30px;
+    }
+  }
+
+  &__Link {
+    flex: 0 1 85%;
+    box-sizing: border-box;
+    padding: $spacing-xs; 
+    text-align: center;
+    
+    & a {
+      font-size: $font-size-m;
+      color: $white;
+      font-weight: bold;
+      text-decoration: none;
+
+      @include smallDevices() {
+        font-size: $font-size-s;
+      }
     }
   }
 }
