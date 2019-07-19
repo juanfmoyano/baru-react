@@ -7,8 +7,9 @@
 
   & .Content {
     @include content();
+    align-items: center;
 
-    @include smallDevices(){
+    @include smallDevices() {
       margin: 0 $spacing-s;
     }
 
@@ -16,7 +17,9 @@
       width: 50%;
       height: 100%;
 
-      @include smallDevices();
+      @include smallDevices() {
+        width: 100%;
+      }
       @include mediumDevices() {
         width: 100%;
       }

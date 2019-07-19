@@ -2,13 +2,13 @@
 @import "../../styles/mixins";
 
 .Contacto {
-  background-image: //linear-gradient(to bottom, $white-gradient, $white),
-    url("../../assets/background/background4.jpg");
+  background-image: url("../../assets/background/background4.jpg");
   min-height: 100vh;
   @include background-image();
 
   & .Content {
     @include content();
+    align-items: center;
 
     @include smallDevices() {
       margin: 0 $spacing-s;
@@ -16,6 +16,7 @@
 
     &__Title {
       @include secondary-title();
+      align-self: center;
       color: $white;
       text-shadow: $text-shadow-black;
     }
@@ -23,12 +24,20 @@
     &__Section {
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
+      justify-content: center;
 
-      & .Area{
+      @include smallDevices(){
+        flex-direction: column;
+      }
+      
+      @include mediumDevices() {
+        flex-direction: column;
+      }
+
+      & .Area {
         flex: 0 1 46%;
 
-        @include smallDevices(){
+        @include smallDevices() {
           flex: 0 1 100%;
         }
       }

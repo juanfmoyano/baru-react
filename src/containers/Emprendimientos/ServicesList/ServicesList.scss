@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.ServicesList {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  @include smallDevices(){
+    flex-direction: column;
+  }
+  
+  @include mediumDevices(){
+    flex-direction: column;
+  }
+
+  & .ServiceItem {
+    flex: 0 1 42%;
+  }
+}

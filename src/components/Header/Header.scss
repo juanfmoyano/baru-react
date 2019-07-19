@@ -20,7 +20,7 @@
     & .Logo {
       display: flex;
       flex: 0 1 15%;
-      @include largeDevices() {
+      @include mediumDevices() {
         flex: 0 1 10%;
       }
       @include smallDevices() {
@@ -43,7 +43,12 @@
 
     & .SideMenuToggle {
       display: none;
-      @include largeDevices() {
+      @include smallDevices() {
+        flex: 0 1 5%;
+        display: flex;
+        justify-content: center;
+      }
+      @include mediumDevices() {
         flex: 0 1 5%;
         display: flex;
         justify-content: center;

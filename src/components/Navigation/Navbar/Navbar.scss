@@ -10,11 +10,15 @@
   background-color: $black;
   color: $main-blue;
 
-  & .NavItem {
-    flex: 0 1 25%;
+  @include smallDevices() {
+    display: none;
   }
 
-  @include largeDevices() {
+  @include mediumDevices() {
     display: none;
+  }
+
+  & .NavItem {
+    flex: 0 1 25%;
   }
 }

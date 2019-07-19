@@ -1,14 +1,26 @@
 import React, { Component } from "react";
+
+import { SERVICIOS } from "utils/constants";
+import { transformObjectToArray } from "utils/helpers/objectsHelper";
+
+import ServicesList from "./ServicesList/ServicesList";
+
 import "./Emprendimientos.scss";
 
-import background from "assets/background/background2.jpg";
-
 class Emprendimientos extends Component {
+  getServicesList() {
+    return transformObjectToArray(SERVICIOS.services);
+  }
   render() {
     return (
-      <div className="Emprendimientos">
-        <img className="Image" src={background} alt="Background" />
-      </div>
+      <section className="Emprendimientos">
+        <div className="Content">
+          <h2 className="Content__Title"> {SERVICIOS.title}</h2>
+          <div className="Content__Section">
+            <ServicesList services={this.getServicesList()} />
+          </div>
+        </div>
+      </section>
     );
   }
 }

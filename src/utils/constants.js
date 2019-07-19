@@ -2,12 +2,18 @@ import mainLogo from "assets/logos/baru.png";
 import barakaLogo from "assets/logos/baraka.png";
 import slbrasasLogo from "assets/logos/santas_las_brasas.png";
 import rdBosqueLogo from "assets/logos/resto_del_bosque.png";
-import baruEventosLogo from "assets/logos/baru_eventos/baru_fuente1.png";
+import baruEventosLogo from "assets/logos/baru_eventos.png";
 
 // ----- ICONS -----
 // SideMenu
 
-import { faTimes, faSitemap, faSeedling, faUtensils, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {
+  faTimes,
+  faSitemap,
+  faSeedling,
+  faUtensils,
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 
 // Quienes somos
 import { faListAlt, faBook, faEye } from "@fortawesome/free-solid-svg-icons";
@@ -45,7 +51,7 @@ export const FOOTER_LABELS = {
 
 export const ROUTES_LABELS = {
   quienesSomos: "¿Quiénes somos?",
-  nuestrosEmprendimientos: "Servicios",
+  nuestrosEmprendimientos: "Servicios y emprendimientos",
   viandasEmpresariales: "Nuestras viandas",
   contacto: "Contacto"
 };
@@ -94,6 +100,68 @@ export const QUIENES_SOMOS = {
         description:
           "Convertirnos en una empresa distinguida y renombrada en el ambiente gastronómico, tanto por los sistemas de trabajo aplicables como así también por la calidad de nuestros servicios, pudiendo en ese sentido, lograr la atención de los más exigentes.",
         icon: faEye
+      }
+    }
+  }
+};
+
+export const SERVICIOS = {
+  title: "Nuestros servicios",
+  services: {
+    baruEventos: {
+      title: "Barú Eventos",
+      logo: baruEventosLogo,
+      description: "Descripción para Barú Eventos",
+      info: {
+        address: "Complejo Rodovía, Ruta 3, Km 969,5",
+        schedule: "12 - 15:30, 19:30 - 00:30",
+        phone: "4846869"
+      },
+      social: {
+        instagram: "/santaslasbrasas",
+        facebook: "/santaslasbrasas"
+      }
+    },
+    baraka: {
+      title: "Baraka",
+      logo: barakaLogo,
+      description: "Descripción para Baraka",
+      info: {
+        address: "Complejo Rodovía, Ruta 3, Km 969,5",
+        schedule: "12 - 15:30, 19:30 - 00:30",
+        phone: "4846869"
+      },
+      social: {
+        instagram: "/santaslasbrasas",
+        facebook: "/santaslasbrasas"
+      }
+    },
+    rdBosque: {
+      title: "Resto del Bosque",
+      logo: rdBosqueLogo,
+      description: "Descripción para Resto del Bosque",
+      info: {
+        address: "Complejo Rodovía, Ruta 3, Km 969,5",
+        schedule: "12 - 15:30, 19:30 - 00:30",
+        phone: "4846869"
+      },
+      social: {
+        instagram: "/santaslasbrasas",
+        facebook: "/santaslasbrasas"
+      }
+    },
+    slBrasas: {
+      title: "Santas las Brasas",
+      logo: slbrasasLogo,
+      description: "Descripción para Santas las Brasas",
+      info: {
+        address: "Complejo Rodovía, Ruta 3, Km 969,5",
+        schedule: "12 - 15:30, 19:30 - 00:30",
+        phone: "4846869"
+      },
+      social: {
+        instagram: "/santaslasbrasas",
+        facebook: "/santaslasbrasas"
       }
     }
   }

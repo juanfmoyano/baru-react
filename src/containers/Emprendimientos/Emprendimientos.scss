@@ -1,7 +1,23 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
 .Emprendimientos {
-  .Image {
-    display: block;
-    width: 100%;
-    height: auto;
+  background-image: url("../../assets/background/background2.jpg");
+  min-height: 100vh;
+  @include background-image();
+
+  & .Content {
+    @include content();
+
+    @include smallDevices() {
+      margin: 0 $spacing-s;
+    }
+
+    &__Title {
+      @include secondary-title();
+      align-self: center;
+      color: $white;
+      text-shadow: $text-shadow-black;
+    }
   }
 }

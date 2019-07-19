@@ -15,7 +15,11 @@
       margin: 0 $spacing-xl;
     }
 
-    @include largeDevices() {
+    @include smallDevices(){
+      flex-direction: column;
+    }
+    
+    @include mediumDevices() {
       flex-direction: column;
     }
 
@@ -35,6 +39,7 @@
 
     &__Title {
       @include secondary-title();
+      align-self: center;
     }
 
     &__Description {

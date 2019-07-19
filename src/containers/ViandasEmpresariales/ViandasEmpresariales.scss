@@ -9,6 +9,7 @@
 
   & .Content {
     @include content();
+    align-items: center;
 
     @include smallDevices() {
       margin: 0 $spacing-s;
