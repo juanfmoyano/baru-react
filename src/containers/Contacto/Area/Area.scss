@@ -107,7 +107,7 @@
 
   &.Administracion {
     @include background-image;
-    background-image: linear-gradient(to right, $main-blue, $white-gradient),url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/popular-food-meal-website-header.jpg");
+    background-image: linear-gradient(to right, $main-blue, $white-gradient),url("https://www.freewebheaders.com/wp-content/gallery/food/popular-food-meal-website-header.jpg");
     background-attachment: unset;
     @include smallDevices(){
       background-image: none;

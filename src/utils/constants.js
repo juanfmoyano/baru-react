@@ -52,7 +52,7 @@ export const FOOTER_LABELS = {
 export const ROUTES_LABELS = {
   quienesSomos: "¿Quiénes somos?",
   nuestrosEmprendimientos: "Servicios y emprendimientos",
-  viandasEmpresariales: "Nuestras viandas",
+  viandasEmpresariales: "Galería",
   contacto: "Contacto"
 };
 
@@ -111,11 +111,27 @@ export const SERVICIOS = {
     baruEventos: {
       title: "Barú Eventos",
       logo: baruEventosLogo,
-      description: "Descripción para Barú Eventos",
+      description:
+        "Casamientos, fiestas de 15, cumpleaños, despedidas, reuniones, etc.",
       info: {
         address: "Complejo Rodovía, Ruta 3, Km 969,5",
         schedule: "12 - 15:30, 19:30 - 00:30",
-        phone: "4846869"
+        phone: "2915087902"
+      },
+      social: {
+        instagram: "/santaslasbrasas",
+        facebook: "/santaslasbrasas"
+      }
+    },
+    baruViandas: {
+      title: "Barú Viandas",
+      logo: baruEventosLogo,
+      description:
+        "Viandas escolares, turismo, parques eólicos, particulares y empresariales",
+      info: {
+        address: "Complejo Rodovía, Ruta 3, Km 969,5",
+        schedule: "12 - 15:30, 19:30 - 00:30",
+        phone: "2915087902"
       },
       social: {
         instagram: "/santaslasbrasas",
@@ -125,50 +141,53 @@ export const SERVICIOS = {
     baraka: {
       title: "Baraka",
       logo: barakaLogo,
-      description: "Descripción para Baraka",
+      description:
+        "Tienda de comidas y almacén. Menúes diarios, lunchonette frío y caliente y sistema de venta al peso",
       info: {
-        address: "Complejo Rodovía, Ruta 3, Km 969,5",
-        schedule: "12 - 15:30, 19:30 - 00:30",
-        phone: "4846869"
+        address: "Alvarado 187",
+        schedule: "Lunes a Viernes 10-14hs y 19-22hs; Sábados 10-14hs",
+        phone: "2914551814"
       },
       social: {
-        instagram: "/santaslasbrasas",
-        facebook: "/santaslasbrasas"
+        instagram: "/barakatiendadecomidas",
+        facebook: "Baraka Tienda de comidas y Almacén"
       }
     },
     rdBosque: {
       title: "Resto del Bosque",
       logo: rdBosqueLogo,
-      description: "Descripción para Resto del Bosque",
+      description:
+        "Restaurant y delivery, especialidad en pastas caseras, pizzas y empanadas, sushi, platos tradicionales y de autor",
       info: {
-        address: "Complejo Rodovía, Ruta 3, Km 969,5",
-        schedule: "12 - 15:30, 19:30 - 00:30",
-        phone: "4846869"
+        address: "Bosque Alto",
+        schedule: "Todos los días 12-14:30hs y 20-23:30hs",
+        phone: "2914075010"
       },
       social: {
-        instagram: "/santaslasbrasas",
-        facebook: "/santaslasbrasas"
+        instagram: "/restodelbosque",
+        facebook: "Resto del Bosque"
       }
     },
     slBrasas: {
       title: "Santas las Brasas",
       logo: slbrasasLogo,
-      description: "Descripción para Santas las Brasas",
+      description:
+        "Parrilla libre, pastas, platos vegetarianos, menú del día, minutas y espacio con pelotero para los niños",
       info: {
         address: "Complejo Rodovía, Ruta 3, Km 969,5",
-        schedule: "12 - 15:30, 19:30 - 00:30",
-        phone: "4846869"
+        schedule: "Todos los días 12-15:30 y 19:30-0hs",
+        phone: "4846869 - 2915087902"
       },
       social: {
         instagram: "/santaslasbrasas",
-        facebook: "/santaslasbrasas"
+        facebook: "Santas Las Brasas"
       }
     }
   }
 };
 
 export const VIANDAS = {
-  title: "Nuestras viandas",
+  title: "Nuestros platos y viandas",
   lunchTypes: {
     transporte: {
       title: "Transporte",
@@ -204,30 +223,31 @@ export const VIANDAS = {
 export const CONTACTO = {
   title: "Contacto",
   sections: {
-    servicios: {
-      title: "Servicios",
-      description: "Texto que describa servicios",
+    compras: {
+      title: "Ventas",
+      description:
+        "Contacto: Juan Pablo Moyano, Ariel Terenzi y Gonzalo Castellón Arrieta - 2915087902",
       icon: faShoppingCart,
       reverse: false,
       class: "Servicios"
     },
     proveedores: {
-      title: "Proveedores",
-      description: "Texto que describa proveedores",
+      title: "Compras",
+      description: "Contacto: Lorena Fernández - 2915087902",
       icon: faTruckMoving,
       reverse: true,
       class: "Proveedores"
     },
     administracion: {
       title: "Administración",
-      description: "Texto que describa administración",
+      description: "Contacto: José Bernardi - 2915087902",
       icon: faHandshake,
       reverse: false,
       class: "Administracion"
     },
     recursos: {
-      title: "Recursos Humanos",
-      description: "Texto que describa recursos humanos",
+      title: "¿Querés formar parte de nuestro equipo?",
+      description: "Escribinos y adjunta tu CV: ",
       icon: faUsers,
       reverse: true,
       class: "Recursos"

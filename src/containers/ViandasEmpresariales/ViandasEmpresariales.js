@@ -30,7 +30,7 @@ class Viandas extends Component {
             iconPrevious={VIANDAS.icons.backward}
             iconNext={VIANDAS.icons.forward}
           />
-          <LunchsList lunchs={this.getLunchs()} />
+          {/* <LunchsList lunchs={this.getLunchs()} /> */}
         </div>
       </section>
     );
