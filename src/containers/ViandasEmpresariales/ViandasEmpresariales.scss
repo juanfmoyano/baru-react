@@ -3,12 +3,13 @@
 
 .Viandas {
   background-image: //linear-gradient(to bottom, $white-gradient, $white),
-    url("../../assets/background/background3.jpg");
+    url("../../assets/background/Galeria.jpg");
   min-height: 100vh;
   @include background-image();
 
   & .Content {
     @include content();
+    align-items: center;
 
     @include smallDevices() {
       margin: 0 $spacing-s;

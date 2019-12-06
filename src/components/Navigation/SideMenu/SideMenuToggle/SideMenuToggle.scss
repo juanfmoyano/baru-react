@@ -1,9 +1,17 @@
 @import "../../../../styles/variables";
-@import "../../../../styles//mixins";
+@import "../../../../styles/mixins";
 
 .SideMenuToggle {
   display: none;
-  @include largeDevices() {
+  @include smallDevices() {
+    margin: 0 $spacing-xl;
+    padding: $spacing-xs;
+    border-radius: $spacing-xs;
+    background-color: $white;
+    color: $black;
+  }
+
+  @include mediumDevices() {
     margin: 0 $spacing-xl;
     padding: $spacing-xs;
     border-radius: $spacing-xs;

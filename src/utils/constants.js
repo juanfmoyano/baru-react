@@ -2,12 +2,19 @@ import mainLogo from "assets/logos/baru.png";
 import barakaLogo from "assets/logos/baraka.png";
 import slbrasasLogo from "assets/logos/santas_las_brasas.png";
 import rdBosqueLogo from "assets/logos/resto_del_bosque.png";
-import baruEventosLogo from "assets/logos/baru_eventos/baru_fuente1.png";
+import baruEventosLogo from "assets/logos/baru_eventos.png";
+import baruViandasLogo from "assets/logos/baru_viandas.png";
 
 // ----- ICONS -----
 // SideMenu
 
-import { faTimes, faSitemap, faSeedling, faUtensils, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {
+  faTimes,
+  faSitemap,
+  faSeedling,
+  faUtensils,
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 
 // Quienes somos
 import { faListAlt, faBook, faEye } from "@fortawesome/free-solid-svg-icons";
@@ -45,7 +52,7 @@ export const FOOTER_LABELS = {
 
 export const ROUTES_LABELS = {
   quienesSomos: "¿Quiénes somos?",
-  nuestrosEmprendimientos: "Servicios",
+  nuestrosEmprendimientos: "Servicios y emprendimientos",
   viandasEmpresariales: "Nuestras viandas",
   contacto: "Contacto"
 };
@@ -69,7 +76,8 @@ export const QUIENES_SOMOS = {
       baruEventos: baruEventosLogo,
       baraka: barakaLogo,
       rdBosque: rdBosqueLogo,
-      slbrasas: slbrasasLogo
+      slbrasas: slbrasasLogo,
+      baruViandas: baruViandasLogo
     }
   },
   organization: {
@@ -99,13 +107,82 @@ export const QUIENES_SOMOS = {
   }
 };
 
+export const SERVICIOS = {
+  title: "Nuestros servicios",
+  services: {
+    baruEventos: {
+      title: "Barú Eventos",
+      logo: baruEventosLogo,
+      description:
+        "Casamientos, fiestas de 15, cumpleaños, despedidas, reuniones, etc.",
+      info: {
+        phone: "2915087902"
+      }
+    },
+    baruViandas: {
+      title: "Barú Viandas",
+      logo: baruViandasLogo,
+      description:
+        "Viandas escolares, turismo, parques eólicos, particulares y empresariales.",
+      info: {
+        phone: "2915087902"
+      }
+    },
+    baraka: {
+      title: "Baraka",
+      logo: barakaLogo,
+      description:
+        "Tienda de comidas y almacén. Menúes diarios, lunchonette frío y caliente y sistema de venta al peso.",
+      info: {
+        address: "Alvarado 187",
+        schedule: "Lunes a Viernes 10-14hs y 19-22hs; Sábados 10-14hs",
+        phone: "2914551814"
+      },
+      social: {
+        instagram: "/barakatiendadecomidas",
+        facebook: "Baraka Tienda de comidas y Almacén"
+      }
+    },
+    rdBosque: {
+      title: "Resto del Bosque",
+      logo: rdBosqueLogo,
+      description:
+        "Restaurant y delivery, especialidad en pastas caseras, pizzas y empanadas, sushi, platos tradicionales y de autor.",
+      info: {
+        address: "Bosque Alto",
+        schedule: "Todos los días 12-14:30hs y 20-23:30hs",
+        phone: "2914075010"
+      },
+      social: {
+        instagram: "/restodelbosque",
+        facebook: "Resto del Bosque"
+      }
+    },
+    slBrasas: {
+      title: "Santas las Brasas",
+      logo: slbrasasLogo,
+      description:
+        "Parrilla libre, pastas, platos vegetarianos, menú del día, minutas y espacio con pelotero para los niños.",
+      info: {
+        address: "Complejo Rodovía, Ruta 3, Km 969,5",
+        schedule: "Todos los días 12-15:30 y 19:30-0hs",
+        phone: "4846869 - 2915087902"
+      },
+      social: {
+        instagram: "/santaslasbrasas",
+        facebook: "Santas Las Brasas"
+      }
+    }
+  }
+};
+
 export const VIANDAS = {
-  title: "Nuestras viandas",
+  title: "Nuestros platos y viandas",
   lunchTypes: {
     transporte: {
       title: "Transporte",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte",
+        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte.",
       icon: faBus
     },
     empresas: {
@@ -136,33 +213,34 @@ export const VIANDAS = {
 export const CONTACTO = {
   title: "Contacto",
   sections: {
-    servicios: {
-      title: "Servicios",
-      description: "Texto que describa servicios",
+    compras: {
+      title: "Ventas",
+      description:
+        "Texto descriptivo para ventas",
       icon: faShoppingCart,
-      reverse: false,
-      class: "Servicios"
+      contact: "ventas@barugastronomia.com.ar",
+      reverse: false
     },
     proveedores: {
-      title: "Proveedores",
-      description: "Texto que describa proveedores",
+      title: "Compras",
+      description: "Texto descriptivo para compras",
       icon: faTruckMoving,
-      reverse: true,
-      class: "Proveedores"
+      contact: "compras@barugastronomia.com.ar",
+      reverse: true
     },
     administracion: {
       title: "Administración",
-      description: "Texto que describa administración",
+      description: "Texto descriptivo para administración",
+      contact: "administracion@barugastronomia.com.ar",
       icon: faHandshake,
-      reverse: false,
-      class: "Administracion"
+      reverse: false
     },
     recursos: {
-      title: "Recursos Humanos",
-      description: "Texto que describa recursos humanos",
+      title: "¿Querés formar parte de nuestro equipo?",
+      description: "Escribinos y adjunta tu CV: ",
+      contact: "rrhh@barugastronomia.com.ar",
       icon: faUsers,
-      reverse: true,
-      class: "Recursos"
+      reverse: true
     }
   }
 };

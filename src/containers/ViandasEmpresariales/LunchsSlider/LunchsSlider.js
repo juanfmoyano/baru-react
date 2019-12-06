@@ -13,6 +13,13 @@ class LunchsSlider extends Component {
     activeSlideIndex: 0
   };
 
+  componentDidMount() {
+    this.interval = setInterval(() => this.nextImageHandler(), 3000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   createLunchSlides() {
     return this.props.slides.map((slide, index) => {
       const isActiveSlide = index === this.state.activeSlideIndex;

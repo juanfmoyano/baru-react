@@ -3,8 +3,9 @@
 
 .Organization {
   background-image: linear-gradient(to right, $black, $grey-gradient),
-    url("../../../assets/background/bg-test.jpg");
+    url("../../../assets/background/QuienesSomos-Organization.jpg");
   @include background-image();
+  background-position: bottom;
 
   & .Content {
     @include content();
@@ -15,7 +16,11 @@
       margin: 0 $spacing-xl;
     }
 
-    @include largeDevices() {
+    @include smallDevices() {
+      flex-direction: column;
+    }
+
+    @include mediumDevices() {
       flex-direction: column;
     }
 
@@ -35,6 +40,7 @@
 
     &__Title {
       @include secondary-title();
+      align-self: center;
     }
 
     &__Description {
