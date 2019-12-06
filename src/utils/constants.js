@@ -3,6 +3,7 @@ import barakaLogo from "assets/logos/baraka.png";
 import slbrasasLogo from "assets/logos/santas_las_brasas.png";
 import rdBosqueLogo from "assets/logos/resto_del_bosque.png";
 import baruEventosLogo from "assets/logos/baru_eventos.png";
+import baruViandasLogo from "assets/logos/baru_viandas.png";
 
 // ----- ICONS -----
 // SideMenu
@@ -52,7 +53,7 @@ export const FOOTER_LABELS = {
 export const ROUTES_LABELS = {
   quienesSomos: "¿Quiénes somos?",
   nuestrosEmprendimientos: "Servicios y emprendimientos",
-  viandasEmpresariales: "Galería",
+  viandasEmpresariales: "Nuestras viandas",
   contacto: "Contacto"
 };
 
@@ -75,7 +76,8 @@ export const QUIENES_SOMOS = {
       baruEventos: baruEventosLogo,
       baraka: barakaLogo,
       rdBosque: rdBosqueLogo,
-      slbrasas: slbrasasLogo
+      slbrasas: slbrasasLogo,
+      baruViandas: baruViandasLogo
     }
   },
   organization: {
@@ -114,35 +116,23 @@ export const SERVICIOS = {
       description:
         "Casamientos, fiestas de 15, cumpleaños, despedidas, reuniones, etc.",
       info: {
-        address: "Complejo Rodovía, Ruta 3, Km 969,5",
-        schedule: "12 - 15:30, 19:30 - 00:30",
         phone: "2915087902"
-      },
-      social: {
-        instagram: "/santaslasbrasas",
-        facebook: "/santaslasbrasas"
       }
     },
     baruViandas: {
       title: "Barú Viandas",
-      logo: baruEventosLogo,
+      logo: baruViandasLogo,
       description:
-        "Viandas escolares, turismo, parques eólicos, particulares y empresariales",
+        "Viandas escolares, turismo, parques eólicos, particulares y empresariales.",
       info: {
-        address: "Complejo Rodovía, Ruta 3, Km 969,5",
-        schedule: "12 - 15:30, 19:30 - 00:30",
         phone: "2915087902"
-      },
-      social: {
-        instagram: "/santaslasbrasas",
-        facebook: "/santaslasbrasas"
       }
     },
     baraka: {
       title: "Baraka",
       logo: barakaLogo,
       description:
-        "Tienda de comidas y almacén. Menúes diarios, lunchonette frío y caliente y sistema de venta al peso",
+        "Tienda de comidas y almacén. Menúes diarios, lunchonette frío y caliente y sistema de venta al peso.",
       info: {
         address: "Alvarado 187",
         schedule: "Lunes a Viernes 10-14hs y 19-22hs; Sábados 10-14hs",
@@ -157,7 +147,7 @@ export const SERVICIOS = {
       title: "Resto del Bosque",
       logo: rdBosqueLogo,
       description:
-        "Restaurant y delivery, especialidad en pastas caseras, pizzas y empanadas, sushi, platos tradicionales y de autor",
+        "Restaurant y delivery, especialidad en pastas caseras, pizzas y empanadas, sushi, platos tradicionales y de autor.",
       info: {
         address: "Bosque Alto",
         schedule: "Todos los días 12-14:30hs y 20-23:30hs",
@@ -172,7 +162,7 @@ export const SERVICIOS = {
       title: "Santas las Brasas",
       logo: slbrasasLogo,
       description:
-        "Parrilla libre, pastas, platos vegetarianos, menú del día, minutas y espacio con pelotero para los niños",
+        "Parrilla libre, pastas, platos vegetarianos, menú del día, minutas y espacio con pelotero para los niños.",
       info: {
         address: "Complejo Rodovía, Ruta 3, Km 969,5",
         schedule: "Todos los días 12-15:30 y 19:30-0hs",
@@ -192,7 +182,7 @@ export const VIANDAS = {
     transporte: {
       title: "Transporte",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte",
+        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte.",
       icon: faBus
     },
     empresas: {
@@ -226,31 +216,31 @@ export const CONTACTO = {
     compras: {
       title: "Ventas",
       description:
-        "Contacto: Juan Pablo Moyano, Ariel Terenzi y Gonzalo Castellón Arrieta - 2915087902",
+        "Texto descriptivo para ventas",
       icon: faShoppingCart,
-      reverse: false,
-      class: "Servicios"
+      contact: "ventas@barugastronomia.com.ar",
+      reverse: false
     },
     proveedores: {
       title: "Compras",
-      description: "Contacto: Lorena Fernández - 2915087902",
+      description: "Texto descriptivo para compras",
       icon: faTruckMoving,
-      reverse: true,
-      class: "Proveedores"
+      contact: "compras@barugastronomia.com.ar",
+      reverse: true
     },
     administracion: {
       title: "Administración",
-      description: "Contacto: José Bernardi - 2915087902",
+      description: "Texto descriptivo para administración",
+      contact: "administracion@barugastronomia.com.ar",
       icon: faHandshake,
-      reverse: false,
-      class: "Administracion"
+      reverse: false
     },
     recursos: {
       title: "¿Querés formar parte de nuestro equipo?",
       description: "Escribinos y adjunta tu CV: ",
+      contact: "rrhh@barugastronomia.com.ar",
       icon: faUsers,
-      reverse: true,
-      class: "Recursos"
+      reverse: true
     }
   }
 };

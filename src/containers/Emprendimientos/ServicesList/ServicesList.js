@@ -10,8 +10,33 @@ class ServicesList extends Component {
       <ServiceItem key={service.title} {...service} />
     ));
   }
+  //render() {
+  //  return <div className="ServicesList">{this.getServiceItems()}</div>;
+  // }
+
   render() {
-    return <div className="ServicesList">{this.getServiceItems()}</div>;
+    const [
+      eventos,
+      viandas,
+      baraka,
+      restoDelBosque,
+      santasLasBrasas
+    ] = this.props.services;
+    return (
+      <div className="ServiceList">
+        <div className="ServiceContainer">
+          <ServiceItem {...viandas} />
+          <ServiceItem {...eventos} />
+        </div>
+        <div className="ServiceContainer">
+          <ServiceItem {...santasLasBrasas} />
+        </div>
+        <div className="ServiceContainer">
+          <ServiceItem {...restoDelBosque} />
+          <ServiceItem {...baraka} />
+        </div>
+      </div>
+    );
   }
 }
 

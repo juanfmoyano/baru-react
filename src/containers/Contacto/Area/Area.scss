@@ -5,8 +5,22 @@
   display: flex;
   margin: $spacing-s;
   color: $white;
+  @include background-image;
+  background-image: linear-gradient(to right, $main-blue, $white-gradient);
+  background-attachment: unset;
+  @include smallDevices() {
+    background-image: none;
+    background: linear-gradient(to bottom right, #3c4bbd 15%, transparent),
+      radial-gradient(
+          circle at 100% 0%,
+          rgba(255, 255, 255, 0.2) 10%,
+          transparent 20%
+        )
+        center center / 15px 15px,
+      linear-gradient(to bottom right, #3c4bbd, #57add8);
+  }
 
-  @include smallDevices(){
+  @include smallDevices() {
     flex-direction: column;
   }
 
@@ -19,15 +33,15 @@
     padding: $spacing-l;
     color: $white;
 
-    @include smallDevices(){
+    @include smallDevices() {
       display: none;
     }
-    
+
     & svg {
       width: 100% !important;
       height: auto;
 
-      @include smallDevices(){
+      @include smallDevices() {
         width: 50% !important;
       }
     }
@@ -45,7 +59,7 @@
     padding: $spacing-s;
     text-align: center;
 
-    @include smallDevices(){
+    @include smallDevices() {
       flex: 0 1 100%;
     }
   }
@@ -57,7 +71,7 @@
     color: $white;
     font-weight: bold;
 
-    @include smallDevices(){
+    @include smallDevices() {
       background-color: $white;
       color: $main-blue;
     }
@@ -65,77 +79,10 @@
 
   &.Reverse {
     flex-direction: row-reverse;
+    background-image: linear-gradient(to left, $main-blue, $white-gradient);
 
-    @include smallDevices(){
+    @include smallDevices() {
       flex-direction: column;
-    }
-  }
-
-  &.Servicios {
-    @include background-image;
-    background-image: linear-gradient(to right, $main-blue, $white-gradient), url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/various-spices-and-herbs-website-header.jpg");
-    background-attachment: unset;
-    @include smallDevices(){
-      background-image: none;
-    background: linear-gradient(to bottom right, #3c4bbd 15%, transparent),
-    radial-gradient(
-        circle at 100% 0%,
-        rgba(255, 255, 255, 0.2) 10%,
-        transparent 20%
-      )
-      center center / 15px 15px,
-    linear-gradient(to bottom right, #3c4bbd, #57add8);
-    }
-  }
-
-  &.Proveedores {
-    @include background-image;
-    background-image: linear-gradient(to left, $main-blue, $white-gradient),url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/french-fries-natural-food-website-header-image.jpg");
-    background-attachment: unset;
-    @include smallDevices(){
-      background-image: none;
-    background: linear-gradient(to bottom right, #3c4bbd 15%, transparent),
-    radial-gradient(
-        circle at 100% 0%,
-        rgba(255, 255, 255, 0.2) 10%,
-        transparent 20%
-      )
-      center center / 15px 15px,
-    linear-gradient(to bottom right, #3c4bbd, #57add8);
-    }
-  }
-
-  &.Administracion {
-    @include background-image;
-    background-image: linear-gradient(to right, $main-blue, $white-gradient),url("https://www.freewebheaders.com/wp-content/gallery/food/popular-food-meal-website-header.jpg");
-    background-attachment: unset;
-    @include smallDevices(){
-      background-image: none;
-    background: linear-gradient(to bottom right, #3c4bbd 15%, transparent),
-    radial-gradient(
-        circle at 100% 0%,
-        rgba(255, 255, 255, 0.2) 10%,
-        transparent 20%
-      )
-      center center / 15px 15px,
-    linear-gradient(to bottom right, #3c4bbd, #57add8);
-    }
-  }
-
-  &.Recursos {
-    @include background-image;
-    background-image: linear-gradient(to left, $main-blue, $white-gradient),url("https://www.freewebheaders.com/wordpress/wp-content/gallery/food/food-header-image.jpg");
-    background-attachment: unset;
-    @include smallDevices(){
-      background-image: none;
-    background: linear-gradient(to bottom right, #3c4bbd 15%, transparent),
-    radial-gradient(
-        circle at 100% 0%,
-        rgba(255, 255, 255, 0.2) 10%,
-        transparent 20%
-      )
-      center center / 15px 15px,
-    linear-gradient(to bottom right, #3c4bbd, #57add8);
     }
   }
 }

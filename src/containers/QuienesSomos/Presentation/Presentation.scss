@@ -2,7 +2,7 @@
 @import "../../../styles/mixins";
 
 .Presentation {
-  background-image: url("https://cdn.pixabay.com/photo/2017/10/22/21/02/food-2879265_1280.jpg");
+  background-image: url("../../../assets/background/QuienesSomos-Presentation.png");
   @include background-image();
 
   & .Content {
@@ -27,6 +27,7 @@
 
     &__Title {
       @include main-title();
+      text-align: center;
     }
   }
 }

@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
   min-height: $header-height-m;
   background-color: $black;
   color: $white;

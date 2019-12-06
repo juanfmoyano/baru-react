@@ -7,8 +7,10 @@
   align-items: center;
   width: 100%;
   background-image: linear-gradient(to right, $black, $main-blue-gradient),
-    url("https://www.freewebheaders.com/wp-content/gallery/food/popular-food-meal-website-header.jpg");
-  background-position: center;
+    url("../../assets//background/Header.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__Main {
     display: flex;

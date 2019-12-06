@@ -18,29 +18,38 @@ const serviceItem = props => {
       </div>
       <div className="ServiceItem__Details">
         <div className="ServiceItem__Description">
-          <div className="ServiceItem__Text">{props.description}</div>
-          <div className="ServiceItem__Social">
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="ServiceItem__Social--Facebook"
-            />{" "}
-            {props.social.facebook}
-            <br />
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="ServiceItem__Social--Instagram"
-            />{" "}
-            {props.social.instagram}
-          </div>
+          <div className="ServiceItem__Text InfoText">{props.description}</div>
+          {props.social ? (
+            <div className="ServiceItem__Social">
+              <div className="ServiceItem__Social--Container">
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="ServiceItem__Social--Facebook InfoText"
+                />
+                <div className="InfoText">{props.social.facebook}</div>
+              </div>
+              <div className="ServiceItem__Social--Container">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="ServiceItem__Social--Instagram InfoText"
+                />
+                <div className="InfoText">{props.social.instagram}</div>
+              </div>
+            </div>
+          ) : null}
         </div>
         <div className="ServiceItem__Info">
-          <div className="ServiceItem__Info--Address">
-            <FontAwesomeIcon icon={faMapMarkerAlt} /> {props.info.address}
-          </div>
-          <div className="ServiceItem__Info--Schedule">
-            <FontAwesomeIcon icon={faClock} /> {props.info.schedule}
-          </div>
-          <div className="ServiceItem__Info--Phone">
+          {props.info && props.info.address ? (
+            <div className="ServiceItem__Info--Address InfoText">
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> {props.info.address}
+            </div>
+          ) : null}
+          {props.info && props.info.schedule ? (
+            <div className="ServiceItem__Info--Schedule InfoText">
+              <FontAwesomeIcon icon={faClock} /> {props.info.schedule}
+            </div>
+          ) : null}
+          <div className="ServiceItem__Info--Phone InfoText">
             <FontAwesomeIcon icon={faPhone} /> {props.info.phone}
           </div>
         </div>

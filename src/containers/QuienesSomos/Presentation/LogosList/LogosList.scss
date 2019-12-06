@@ -10,7 +10,7 @@
   margin-bottom: $spacing-l;
 
   & .LogoItem {
-    flex: 0 1 25%;
+    flex: 0 1 20%;
 
     @include smallDevices(){
       flex: 0 1 50%;

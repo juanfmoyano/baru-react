@@ -1,10 +1,11 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
 
-.ServicesList {
+.ServiceContainer {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
+  justify-content: center;
 
   @include smallDevices(){
     flex-direction: column;
