@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 // Routes info
 import { getRoutesInfoAsArray } from "utils/routing/routesInfo";
+import NotFound from "containers/NotFound/NotFound";
 
 import Layout from "hoc/Layout/Layout";
 
@@ -27,6 +28,7 @@ class App extends Component {
         <Layout>
           <Switch>
             {this.createSwitchRoutes()}
+            <Route path="*" component={NotFound} />
           </Switch>
         </Layout>
       </div>
