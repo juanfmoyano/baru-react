@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhone,
   faClock,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faArrowCircleLeft
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -26,14 +27,26 @@ const serviceItem = props => {
                   icon={faFacebook}
                   className="ServiceItem__Social--Facebook InfoText"
                 />
-                <div className="InfoText">{props.social.facebook}</div>
+                <a href={props.social.facebook.link} className="SocialLink">
+                  <div className="InfoText">{props.social.facebook.label}</div>
+                </a>
+                <FontAwesomeIcon
+                  icon={faArrowCircleLeft}
+                  className="ServiceItem__Social--Facebook InfoText"
+                />
               </div>
               <div className="ServiceItem__Social--Container">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="ServiceItem__Social--Instagram InfoText"
                 />
-                <div className="InfoText">{props.social.instagram}</div>
+                <a href={props.social.instagram.link} className="SocialLink">
+                  <div className="InfoText">{props.social.instagram.label}</div>
+                </a>
+                <FontAwesomeIcon
+                  icon={faArrowCircleLeft}
+                  className="ServiceItem__Social--Instagram InfoText"
+                />
               </div>
             </div>
           ) : null}

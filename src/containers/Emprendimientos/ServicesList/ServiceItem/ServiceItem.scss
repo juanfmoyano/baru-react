@@ -26,6 +26,7 @@
 
     &--Instagram,
     &--Facebook {
+      padding-left: 6px !important;
       padding-right: 6px !important;
     }
   }
@@ -129,4 +130,10 @@
   @include smallDevices() {
     padding-bottom: $spacing-s;
   }
+}
+
+.SocialLink {
+  text-decoration: none;
+  color: $white;
+  text-shadow: $text-shadow-black;
 }

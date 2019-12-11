@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.NotFound {
+  background-image: url("../../assets/background/NotFound.jpg");
+  min-height: 100vh;
+  @include background-image();
+  display: flex;
+  flex-direction: column;
+
+  & .Content {
+    @include content();
+    flex: 1;
+    align-items: center;
+
+    @include smallDevices() {
+      margin: 0 $spacing-s;
+    }
+
+    &__Section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 $spacing-xl;
+      margin: auto;
+      background-color: $main-blue;
+      color: $white;
+      flex: 1;
+
+      @include smallDevices() {
+        flex-direction: column;
+      }
+
+      @include mediumDevices() {
+        flex-direction: column;
+      }
+    }
+
+    &__Text {
+      text-align: center;
+      text-shadow: $text-shadow-black;
+    }
+  }
+}

@@ -18,19 +18,19 @@ const routesInfo = {
   nuestrosEmprendimientos: {
     path: "/emprendimientos",
     component: Emprendimientos,
-    exact: false,
+    exact: true,
     label: ROUTES_LABELS.nuestrosEmprendimientos
   },
   viandasEmpresariales: {
     path: "/viandas",
     component: Viandas,
-    exact: false,
+    exact: true,
     label: ROUTES_LABELS.viandasEmpresariales
   },
   contacto: {
     path: "/contacto",
     component: Contacto,
-    exact: false,
+    exact: true,
     label: ROUTES_LABELS.contacto
   }
 };
