@@ -139,8 +139,15 @@ export const SERVICIOS = {
         phone: "2914551814"
       },
       social: {
-        instagram: "/barakatiendadecomidas",
-        facebook: "Baraka Tienda de comidas y Almacén"
+        instagram: {
+          label: "/barakatiendadecomidas",
+          link: "https://www.instagram.com/barakatiendadecomidas/"
+        },
+        facebook: {
+          label: "Baraka Tienda de comidas y Almacén",
+          link:
+            "https://www.facebook.com/Baraka-Tienda-de-comidas-y-Almac%C3%A9n-993272750808320/?ref=br_rs"
+        }
       }
     },
     rdBosque: {
@@ -154,8 +161,14 @@ export const SERVICIOS = {
         phone: "2914075010"
       },
       social: {
-        instagram: "/restodelbosque",
-        facebook: "Resto del Bosque"
+        instagram: {
+          label: "/restodelbosque",
+          link: "https://www.instagram.com/restodelbosque/"
+        },
+        facebook: {
+          label: "Resto del Bosque",
+          link: "https://www.facebook.com/restodelbosque/?ref=br_rs"
+        }
       }
     },
     slBrasas: {
@@ -169,8 +182,14 @@ export const SERVICIOS = {
         phone: "4846869 - 2915087902"
       },
       social: {
-        instagram: "/santaslasbrasas",
-        facebook: "Santas Las Brasas"
+        instagram: {
+          label: "/santaslasbrasas",
+          link: "https://www.instagram.com/santaslasbrasas/"
+        },
+        facebook: {
+          label: "Santas Las Brasas",
+          link: "https://www.facebook.com/santaslasbrasas/"
+        }
       }
     }
   }
@@ -215,8 +234,7 @@ export const CONTACTO = {
   sections: {
     compras: {
       title: "Ventas",
-      description:
-        "Texto descriptivo para ventas",
+      description: "Texto descriptivo para ventas",
       icon: faShoppingCart,
       contact: "ventas@barugastronomia.com.ar",
       reverse: false
