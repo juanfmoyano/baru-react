@@ -4,6 +4,7 @@ import slbrasasLogo from "assets/logos/santas_las_brasas.png";
 import rdBosqueLogo from "assets/logos/resto_del_bosque.png";
 import baruEventosLogo from "assets/logos/baru_eventos.png";
 import baruViandasLogo from "assets/logos/baru_viandas.png";
+import baruFabricaLogo from "assets/logos/baru_fabrica.png";
 
 // ----- ICONS -----
 // SideMenu
@@ -78,6 +79,7 @@ export const QUIENES_SOMOS = {
       rdBosque: rdBosqueLogo,
       slbrasas: slbrasasLogo,
       baruViandas: baruViandasLogo,
+      baruFabrica: baruFabricaLogo
     },
   },
   organization: {
@@ -112,7 +114,7 @@ export const SERVICIOS = {
   services: {
     baruFabrica: {
       title: "Barú Fábrica",
-      logo: baruEventosLogo,
+      logo: baruFabricaLogo,
       description:
         "Próximamente elaboraciones artesanales de venta al público y mayoristas.",
       social: {
