@@ -6,12 +6,12 @@ import {
   faPhone,
   faClock,
   faMapMarkerAlt,
-  faArrowCircleLeft
+  faArrowCircleLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-const serviceItem = props => {
+const serviceItem = (props) => {
   return (
     <div className="ServiceItem">
       <div className="ServiceItem__Logo">
@@ -22,19 +22,26 @@ const serviceItem = props => {
           <div className="ServiceItem__Text InfoText">{props.description}</div>
           {props.social ? (
             <div className="ServiceItem__Social">
-              <div className="ServiceItem__Social--Container">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  className="ServiceItem__Social--Facebook InfoText"
-                />
-                <a href={props.social.facebook.link} className="SocialLink">
-                  <div className="InfoText">{props.social.facebook.label}</div>
-                </a>
-                <FontAwesomeIcon
-                  icon={faArrowCircleLeft}
-                  className="ServiceItem__Social--Facebook InfoText"
-                />
-              </div>
+              {props.social.facebook ? (
+                <>
+                  <div className="ServiceItem__Social--Container">
+                    <FontAwesomeIcon
+                      icon={faFacebook}
+                      className="ServiceItem__Social--Facebook InfoText"
+                    />
+                    <a href={props.social.facebook.link} className="SocialLink">
+                      <div className="InfoText">
+                        {props.social.facebook.label}
+                      </div>
+                    </a>
+                    <FontAwesomeIcon
+                      icon={faArrowCircleLeft}
+                      className="ServiceItem__Social--Facebook InfoText"
+                    />
+                  </div>
+                </>
+              ) : null}
+
               <div className="ServiceItem__Social--Container">
                 <FontAwesomeIcon
                   icon={faInstagram}
@@ -62,9 +69,11 @@ const serviceItem = props => {
               <FontAwesomeIcon icon={faClock} /> {props.info.schedule}
             </div>
           ) : null}
-          <div className="ServiceItem__Info--Phone InfoText">
-            <FontAwesomeIcon icon={faPhone} /> {props.info.phone}
-          </div>
+          {props.info && props.info.phone ? (
+            <div className="ServiceItem__Info--Phone InfoText">
+              <FontAwesomeIcon icon={faPhone} /> {props.info.phone}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

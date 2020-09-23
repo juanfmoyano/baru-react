@@ -13,7 +13,7 @@ import {
   faSitemap,
   faSeedling,
   faUtensils,
-  faEnvelope
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Quienes somos
@@ -24,7 +24,7 @@ import {
   faGraduationCap,
   faBuilding,
   faBus,
-  faUserAlt
+  faUserAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Viandas - Slider
@@ -35,26 +35,26 @@ import {
   faHandshake,
   faShoppingCart,
   faTruckMoving,
-  faUsers
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
 // ----------
 
 export const HEADER_LABELS = {
-  title: "Barú Gastronomía"
+  title: "Barú Gastronomía",
 };
 
 export const FOOTER_LABELS = {
   copyright: "Copyright © Baru Gastronomía",
   design: "Design & Dev. By Attic Developers",
-  info: "2019"
+  info: "2019",
 };
 
 export const ROUTES_LABELS = {
   quienesSomos: "¿Quiénes somos?",
   nuestrosEmprendimientos: "Servicios y emprendimientos",
   viandasEmpresariales: "Nuestras viandas",
-  contacto: "Contacto"
+  contacto: "Contacto",
 };
 
 export const SIDEMENU = {
@@ -64,8 +64,8 @@ export const SIDEMENU = {
     quienesSomos: faSitemap,
     nuestrosEmprendimientos: faSeedling,
     viandasEmpresariales: faUtensils,
-    contacto: faEnvelope
-  }
+    contacto: faEnvelope,
+  },
 };
 
 export const QUIENES_SOMOS = {
@@ -77,47 +77,65 @@ export const QUIENES_SOMOS = {
       baraka: barakaLogo,
       rdBosque: rdBosqueLogo,
       slbrasas: slbrasasLogo,
-      baruViandas: baruViandasLogo
-    }
+      baruViandas: baruViandasLogo,
+    },
   },
   organization: {
     title: "Quiénes somos",
     description:
-      "Amantes de la gastronomía, y sumado a nuestra vocación de servicios, hemos dado nacimiento a BARU Desarrollos Gastronómicos & Gastronomía Industrial. Este es un espacio en donde, partiendo desde la gastronomía, brindamos servicios de catering, comedores para empresas y distribución de alimentos y viandas empresariales.",
+      "Este es un espacio, donde con dedicación y responsabilidad, brindamos un servicio gastronómico versátil que incluye entre lo más destacado los servicios de catering, eventos, comedores/restaurantes propios y/o tercerizados para servicios de comida, elaboración de viandas para empresas, parques eólicos, establecimientos de la salud y distribución de productos de elaboración propia.",
     cards: {
       mission: {
         title: "Misión",
         description:
           "Poder ofrecer a nuestros comensales, diferentes opciones gastronómicas en el marco del tipo de servicio que nos sea requerido.",
-        icon: faListAlt
+        icon: faListAlt,
       },
       compromise: {
         title: "Compromiso y filosofía",
         description:
           "Consideramos que la gastronomía representa en nuestra empresa, las raíces que nos adhieren a nuestro desarrollo laboral y económico. Por otro lado, la honestidad es la base filosófica sobre la que reposan nuestros sueños. Entendemos a la gastronomía en un concepto amplio, que va más allá del sabor o aroma de un plato en particular, pues buscamos dejar una experiencia única-de todos los sentidos- en nuestros comensales.",
-        icon: faBook
+        icon: faBook,
       },
       vision: {
         title: "Visión",
         description:
-          "Convertirnos en una empresa distinguida y renombrada en el ambiente gastronómico, tanto por los sistemas de trabajo aplicables como así también por la calidad de nuestros servicios, pudiendo en ese sentido, lograr la atención de los más exigentes.",
-        icon: faEye
-      }
-    }
-  }
+          "Convertirnos en una empresa distinguida y renombrada en el ambiente gastronómico, tanto por los sistemas de trabajo desarrollados, como así también por la calidad de nuestros productos y servicios, pudiendo en ese sentido, lograr captar la atención de los más exigentes.",
+        icon: faEye,
+      },
+    },
+  },
 };
 
 export const SERVICIOS = {
   title: "Nuestros servicios",
   services: {
+    baruFabrica: {
+      title: "Barú Fábrica",
+      logo: baruEventosLogo,
+      description:
+        "Próximamente elaboraciones artesanales de venta al público y mayoristas.",
+      social: {
+        instagram: {
+          label: "/baru.gastronomia",
+          link: "https://www.instagram.com/baru.gastronomia/",
+        },
+      },
+    },
     baruEventos: {
       title: "Barú Eventos",
       logo: baruEventosLogo,
       description:
         "Casamientos, fiestas de 15, cumpleaños, despedidas, reuniones, etc.",
       info: {
-        phone: "2915087902"
-      }
+        phone: "2915087902",
+      },
+      social: {
+        instagram: {
+          label: "/baru.gastronomia",
+          link: "https://www.instagram.com/baru.gastronomia/",
+        },
+      },
     },
     baruViandas: {
       title: "Barú Viandas",
@@ -125,51 +143,57 @@ export const SERVICIOS = {
       description:
         "Viandas escolares, turismo, parques eólicos, particulares y empresariales.",
       info: {
-        phone: "2915087902"
-      }
+        phone: "2915087902",
+      },
+      social: {
+        instagram: {
+          label: "/baru.gastronomia",
+          link: "https://www.instagram.com/baru.gastronomia/",
+        },
+      },
     },
     baraka: {
       title: "Baraka",
       logo: barakaLogo,
       description:
-        "Tienda de comidas y almacén. Menúes diarios, lunchonette frío y caliente y sistema de venta al peso.",
+        "Espacio renovado con venta de comida al peso, calientes y frías. Elaboraciones artesanales. Almacén de productos secos.",
       info: {
         address: "Alvarado 187",
         schedule: "Lunes a Viernes 10-14hs y 19-22hs; Sábados 10-14hs",
-        phone: "2914551814"
+        phone: "2914551814 - 2914121979",
       },
       social: {
         instagram: {
           label: "/barakatiendadecomidas",
-          link: "https://www.instagram.com/barakatiendadecomidas/"
+          link: "https://www.instagram.com/barakatiendadecomidas/",
         },
         facebook: {
           label: "Baraka Tienda de comidas y Almacén",
           link:
-            "https://www.facebook.com/Baraka-Tienda-de-comidas-y-Almac%C3%A9n-993272750808320/?ref=br_rs"
-        }
-      }
+            "https://www.facebook.com/Baraka-Tienda-de-comidas-y-Almac%C3%A9n-993272750808320/?ref=br_rs",
+        },
+      },
     },
     rdBosque: {
       title: "Resto del Bosque",
       logo: rdBosqueLogo,
       description:
-        "Restaurant y delivery, especialidad en pastas caseras, pizzas y empanadas, sushi, platos tradicionales y de autor.",
+        "Restaurante. Servicio de comida en lunchonettes con venta al peso. Sushi. Helados. Panificados. Vinos de autor. Almacén saludable.",
       info: {
         address: "Bosque Alto",
         schedule: "Todos los días 12-14:30hs y 20-23:30hs",
-        phone: "2914075010"
+        phone: "2914075010",
       },
       social: {
         instagram: {
           label: "/restodelbosque",
-          link: "https://www.instagram.com/restodelbosque/"
+          link: "https://www.instagram.com/restodelbosque/",
         },
         facebook: {
           label: "Resto del Bosque",
-          link: "https://www.facebook.com/restodelbosque/?ref=br_rs"
-        }
-      }
+          link: "https://www.facebook.com/restodelbosque/?ref=br_rs",
+        },
+      },
     },
     slBrasas: {
       title: "Santas las Brasas",
@@ -179,20 +203,20 @@ export const SERVICIOS = {
       info: {
         address: "Complejo Rodovía, Ruta 3, Km 969,5",
         schedule: "Todos los días 12-15:30 y 19:30-0hs",
-        phone: "4846869 - 2915087902"
+        phone: "4846869 - 2915087902",
       },
       social: {
         instagram: {
           label: "/santaslasbrasas",
-          link: "https://www.instagram.com/santaslasbrasas/"
+          link: "https://www.instagram.com/santaslasbrasas/",
         },
         facebook: {
           label: "Santas Las Brasas",
-          link: "https://www.facebook.com/santaslasbrasas/"
-        }
-      }
-    }
-  }
+          link: "https://www.facebook.com/santaslasbrasas/",
+        },
+      },
+    },
+  },
 };
 
 export const VIANDAS = {
@@ -201,32 +225,32 @@ export const VIANDAS = {
     transporte: {
       title: "Transporte",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para transporte.",
-      icon: faBus
+        "Servicio de comedor o viandas, càsicas o envasadas al vacío.",
+      icon: faBus,
     },
     empresas: {
       title: "Empresas",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para empresas",
-      icon: faBuilding
+        "Servicio de almuerzos, cenas, refrigerios, desayunos, coffe break, catering, eventos, parada de planta.",
+      icon: faBuilding,
     },
     particulares: {
       title: "Particulares",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas particulares",
-      icon: faUserAlt
+        "Servicio de restaurante, viandas, eventos, plan de viandas congeladas.",
+      icon: faUserAlt,
     },
     egresados: {
       title: "Egresados",
       description:
-        "Acá iría un texto descriptivo que haga referencia a las viandas para egresados",
-      icon: faGraduationCap
-    }
+        "Servicio de viandas escolares y, fiestas de cierre de fin de año y egresados. ",
+      icon: faGraduationCap,
+    },
   },
   icons: {
     backward: faArrowLeft,
-    forward: faArrowRight
-  }
+    forward: faArrowRight,
+  },
 };
 
 export const CONTACTO = {
@@ -237,28 +261,28 @@ export const CONTACTO = {
       description: "Texto descriptivo para ventas",
       icon: faShoppingCart,
       contact: "ventas@barugastronomia.com.ar",
-      reverse: false
+      reverse: false,
     },
     proveedores: {
       title: "Compras",
       description: "Texto descriptivo para compras",
       icon: faTruckMoving,
       contact: "compras@barugastronomia.com.ar",
-      reverse: true
+      reverse: true,
     },
     administracion: {
       title: "Administración",
       description: "Texto descriptivo para administración",
       contact: "administracion@barugastronomia.com.ar",
       icon: faHandshake,
-      reverse: false
+      reverse: false,
     },
     recursos: {
       title: "¿Querés formar parte de nuestro equipo?",
       description: "Escribinos y adjunta tu CV: ",
       contact: "rrhh@barugastronomia.com.ar",
       icon: faUsers,
-      reverse: true
-    }
-  }
+      reverse: true,
+    },
+  },
 };

@@ -16,6 +16,7 @@ class ServicesList extends Component {
 
   render() {
     const [
+      fabrica,
       eventos,
       viandas,
       baraka,
@@ -29,6 +30,7 @@ class ServicesList extends Component {
           <ServiceItem {...eventos} />
         </div>
         <div className="ServiceContainer">
+          <ServiceItem {...fabrica} />          
           <ServiceItem {...santasLasBrasas} />
         </div>
         <div className="ServiceContainer">

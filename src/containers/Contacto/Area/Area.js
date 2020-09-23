@@ -14,7 +14,6 @@ class Area extends Component {
         </div>
         <div className="Area__Details">
           <h2 className="Area__Title"> {this.props.title} </h2>
-          <p className="Area__Description"> {this.props.description} </p>
           <div className="Area__Contacto"> {this.props.contact} </div>
         </div>
       </div>
