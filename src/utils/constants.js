@@ -227,7 +227,7 @@ export const VIANDAS = {
     transporte: {
       title: "Transporte",
       description:
-        "Servicio de comedor o viandas, càsicas o envasadas al vacío.",
+        "Servicio de comedor o viandas, clásicas o envasadas al vacío.",
       icon: faBus,
     },
     empresas: {
